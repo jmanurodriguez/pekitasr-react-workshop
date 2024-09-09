@@ -1,3 +1,4 @@
+//src/components/CardWidget/CardWidget.jsx
 import { Flex, Text } from '@chakra-ui/react';
 import { BsMinecart } from 'react-icons/bs';
 

@@ -3,21 +3,20 @@ import { useState, useEffect } from "react";
 import productosData from "../data/productos.json";
 
 export const useProductById = (id) => {
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    // Simulamos la obtención del producto por ID
     const foundProduct = productosData.find((producto) => producto.id === id);
 
     if (foundProduct) {
       setProduct(foundProduct);
     } else {
-      console.error(`Producto con ID ${id} no encontrado`);
+      setError(true);
     }
-
     setLoading(false);
   }, [id]);
 
-  return { product, loading };
+  return { product, loading, error };
 };

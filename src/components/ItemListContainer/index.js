@@ -1,2 +1,2 @@
-// src/components/ItemList/index.js
+// src/components/ItemListContainer/index.js
 export { ItemListContainer } from './ItemListContainer';

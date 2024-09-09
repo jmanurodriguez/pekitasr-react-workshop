@@ -1,3 +1,4 @@
+//src/hooks/useProducts.jsx
 import { useState, useEffect } from "react";
 import productosData from "../data/productos.json";
 

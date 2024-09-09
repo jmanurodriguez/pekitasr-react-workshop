@@ -1,19 +1,21 @@
+// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components';
-import { ItemListContainer, ItemDetailContainer } from './components';
-import { useProducts } from './hooks/useProducts'; // Importar el hook
+import { Navbar } from './components/Navbar/Navbar';
+import { Home } from './pages/Home';
+import { Category } from './pages/Category';
+import ItemDetail from './pages/Item';
+import Footer from './components/Footer/Footer'; // Importa el Footer
 
 export function App() {
-  const { products } = useProducts(); // Obtener los productos
-
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<ItemListContainer productos={products} />} /> 
-        <Route path="/category/:categoryId" element={<ItemListContainer productos={products} />} />
-        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:categoryId" element={<Category />} />
+        <Route path="/item/:itemId" element={<ItemDetail />} />
       </Routes>
+      <Footer /> {/* Agrega el footer aquí */}
     </Router>
   );
 }

@@ -3,13 +3,18 @@
 import productosData from '../data/productos.json';
 
 // Simula una solicitud para obtener todos los productos
-export const getProductos = () => {
-  return new Promise((resolve) => {
+export const getProductos = (simulateError = false) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(productosData);
-    }, 1000); // Simulación de un retraso de 1 segundo
+      if (simulateError) {
+        reject('Error en la solicitud de productos');
+      } else {
+        resolve(productosData);
+      }
+    }, 1000);
   });
 };
+
 
 // Simula una solicitud para obtener los detalles de un producto por su ID
 export const getProductoById = (id) => {
@@ -19,7 +24,7 @@ export const getProductoById = (id) => {
       if (producto) {
         resolve(producto);
       } else {
-        reject('Producto no encontrado');
+        reject({ error: true, message: 'Producto no encontrado' });
       }
     }, 1000);
   });
