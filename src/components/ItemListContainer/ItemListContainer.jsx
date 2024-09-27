@@ -5,7 +5,7 @@ import { Item } from "../Item/Item";
 
 export const ItemListContainer = ({ productos }) => {
   const [paginaActual, setPaginaActual] = useState(1);
-  const productosPorPagina = 6;
+  const productosPorPagina = 8;
   const totalPaginas = Math.ceil(productos.length / productosPorPagina);
   const productosPaginados = productos.slice(
     (paginaActual - 1) * productosPorPagina,
@@ -28,8 +28,8 @@ export const ItemListContainer = ({ productos }) => {
   return (
     <Box maxW="1200px" mx="auto" py={10} px={4}>
       <SimpleGrid
-        columns={{ base: 2, md: 3, lg: 4 }} 
-        spacing={{ base: 4, md: 6 }} 
+        columns={{ base: 1, sm: 2, md: 3, lg: 4 }} 
+        spacing={6}
       >
         {productosPaginados.map((producto) => (
           <Item key={producto.id} producto={producto} />

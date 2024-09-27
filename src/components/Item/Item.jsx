@@ -8,23 +8,26 @@ import {
   Text,
   useColorModeValue,
   VStack,
+  Spacer,
 } from "@chakra-ui/react";
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export function Item({ producto }) {
   const categorias = Array.isArray(producto.categorias) 
-    ? producto.categorias 
+    ? producto.categorias.slice(0, 2)  // Mostrar solo las primeras 2 categorías
     : [producto.categorias];
 
   return (
     <Box
-      maxW="sm"
-      borderWidth="1px"
+      borderWidth="3px"
       borderRadius="lg"
       overflow="hidden"
       boxShadow="lg"
       bg={useColorModeValue("white", "gray.800")}
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
       _hover={{
         transform: "scale(1.05)",
         transition: "0.3s ease-in-out",
@@ -36,10 +39,10 @@ export function Item({ producto }) {
         alt={producto.nombre}
         objectFit="cover"
         w="100%"
-        h={{ base: "200px", md: "250px", lg: "300px" }} // Aseguramos que el tamaño de la imagen cambie según el dispositivo
+        h={{ base: "200px", md: "250px" }}
       />
 
-      <Box p={4}>
+      <Box p="4" flex="1">
         <Flex alignItems="baseline">
           <Badge borderRadius="full" px="2" colorScheme="green">
             Nuevo
@@ -48,15 +51,16 @@ export function Item({ producto }) {
             color={useColorModeValue("gray.500", "gray.400")}
             fontSize="sm"
             ml="2"
+            noOfLines={1}  // Asegurarnos de que el texto de categorías ocupe solo 1 línea
           >
-            {categorias.join(", ")}
+            {categorias.join(", ")}{/* Unimos las categorías */}
           </Text>
         </Flex>
 
         <VStack spacing={2} align="start" mt={3}>
           <Text
             fontWeight="bold"
-            fontSize={{ base: "sm", md: "lg" }} // Ajustamos el tamaño del texto
+            fontSize={{ base: "md", md: "lg" }}
             as="h4"
             textAlign="left"
             lineHeight="tight"
@@ -80,6 +84,8 @@ export function Item({ producto }) {
             ${producto.precio}
           </Text>
         </VStack>
+
+        <Spacer />
 
         <Link to={`/item/${producto.id}`}>
           <Button
