@@ -1,4 +1,4 @@
-//src/components/CartDetails/CartDetails.jsx
+// src/components/CartDetails/CartDetails.jsx
 import { useContext } from "react";
 import {
   Box,
@@ -14,20 +14,18 @@ import {
   Alert,
   AlertIcon,
   IconButton,
+  useBreakpointValue,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { DeleteIcon, AddIcon, MinusIcon } from "@chakra-ui/icons";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
-import Swal from 'sweetalert2'; // Importar SweetAlert
+import Swal from 'sweetalert2';
 
 export const CartDetails = () => {
   const { cartState, addItem, removeItem, deleteItem } = useContext(CartContext);
-  const navigate = useNavigate(); // Para redirigir al checkout
-
-  // Calcular el total del carrito
+  const navigate = useNavigate();
   const total = cartState.reduce((acc, item) => acc + (item.price ?? 0) * (item.qty ?? 1), 0);
-
-  // Calcular la cantidad total de productos
   const totalQty = cartState.reduce((acc, item) => acc + (item.qty ?? 0), 0);
 
   const handleDeleteItem = (item) => {
@@ -52,12 +50,25 @@ export const CartDetails = () => {
   };
 
   const handleCheckout = () => {
-    navigate('/checkout'); // Redirigir al checkout
+    navigate('/checkout');
   };
 
+  const buttonSize = useBreakpointValue({ base: "sm", md: "md" });
+  const textColor = useColorModeValue("gray.800", "white");
+  const bgColor = useColorModeValue("white", "gray.800");
+  const highlightColor = useColorModeValue("pink.500", "pink.300");
+  const mutedTextColor = useColorModeValue("gray.600", "gray.400");
+
   return (
-    <Box p={6} maxW="800px" mx="auto">
-      <Heading as="h2" size="lg" mb={6} textAlign="center">
+    <Box p={6} maxW="1200px" mx="auto">
+      <Heading 
+        as="h2" 
+        size="lg" 
+        mb={6} 
+        textAlign="center" 
+        color={highlightColor} 
+        fontFamily="'Roboto', sans-serif"
+      >
         Detalles del Carrito
       </Heading>
 
@@ -67,7 +78,7 @@ export const CartDetails = () => {
           Tu carrito está vacío.
         </Alert>
       ) : (
-        <VStack spacing={4} align="stretch">
+        <VStack spacing={4} align="stretch" bg={bgColor} p={4} borderRadius="lg" boxShadow="md">
           {cartState.map((item) => (
             <Flex
               key={item.id}
@@ -76,42 +87,47 @@ export const CartDetails = () => {
               borderRadius="md"
               alignItems="center"
               boxShadow="sm"
+              direction={{ base: "column", md: "row" }}
+              textAlign={{ base: "center", md: "left" }}
             >
               <Image
                 src={item.imagen}
                 alt={item.nombre}
-                boxSize="100px"
+                boxSize={{ base: "150px", md: "100px" }}
                 objectFit="cover"
                 borderRadius="md"
-                mr={4}
+                mb={{ base: 4, md: 0 }}
               />
+
               <Box flex="1">
-                <Text fontSize="xl" fontWeight="bold">
+                <Text fontSize="lg" fontWeight="bold" color={highlightColor}>  {/* Cambié el color aquí */}
                   {item.nombre}
                 </Text>
-                <HStack spacing={4} mt={2}>
-                  <Text>Precio: ${item.price?.toFixed(2) ?? '0.00'}</Text>
+                <HStack spacing={4} mt={2} justify={{ base: "center", md: "flex-start" }}>
+                  <Text fontSize="sm" color={mutedTextColor}>Precio: ${item.price?.toFixed(2) ?? '0.00'}</Text>
                   <HStack>
                     <IconButton
                       aria-label="Disminuir cantidad"
                       icon={<MinusIcon />}
-                      size="sm"
+                      size={buttonSize}
                       onClick={() => removeItem(item)}
                       isDisabled={item.qty === 1}
                     />
-                    <Text>{item.qty}</Text>
+                    <Text fontSize="md" color={textColor}>{item.qty}</Text>
                     <IconButton
                       aria-label="Aumentar cantidad"
                       icon={<AddIcon />}
-                      size="sm"
+                      size={buttonSize}
                       onClick={() => addItem(item)}
                     />
                   </HStack>
                 </HStack>
               </Box>
+
               <Spacer />
-              <HStack>
-                <Text fontWeight="bold">
+
+              <HStack justify={{ base: "center", md: "flex-end" }} mt={{ base: 4, md: 0 }}>
+                <Text fontWeight="bold" color={highlightColor}>
                   Subtotal: ${(item.price * item.qty).toFixed(2)}
                 </Text>
                 <IconButton
@@ -119,18 +135,21 @@ export const CartDetails = () => {
                   icon={<DeleteIcon />}
                   colorScheme="red"
                   variant="outline"
+                  size={buttonSize}
                   onClick={() => handleDeleteItem(item)}
                 />
               </HStack>
             </Flex>
           ))}
+
           <Divider />
-          <Flex alignItems="center">
-            <Text fontSize="2xl" fontWeight="bold">
+
+          <Flex alignItems="center" direction={{ base: "column", md: "row" }} textAlign="center">
+            <Text fontSize="2xl" fontWeight="bold" color={highlightColor}>
               Total: ${total.toFixed(2)} ({totalQty} productos)
             </Text>
             <Spacer />
-            <Button colorScheme="pink" onClick={handleCheckout}>
+            <Button colorScheme="pink" onClick={handleCheckout} size={buttonSize} mt={{ base: 4, md: 0 }}>
               Ir al Checkout
             </Button>
           </Flex>

@@ -1,16 +1,33 @@
-//src/components/ItemDetail.jsx
+// src/components/ItemDetail.jsx
 import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { Box, Image, Text, Button, Heading, VStack, Stack } from '@chakra-ui/react';
-import Swal from 'sweetalert2'; // Importar SweetAlert2
-import { CartContext } from '../context/CartContext'; 
+import {
+  Box,
+  chakra,
+  Container,
+  Stack,
+  Text,
+  Image,
+  Flex,
+  VStack,
+  Button,
+  Heading,
+  SimpleGrid,
+  StackDivider,
+  List,
+  ListItem,
+  useColorModeValue,
+} from '@chakra-ui/react';
+import Swal from 'sweetalert2';
+import { MdLocalShipping } from 'react-icons/md';
+import { CartContext } from '../context/CartContext';
 import productosData from '../data/productos.json';
 
 export default function ItemDetail() {
   const { itemId } = useParams();
-  const { addItem } = useContext(CartContext); 
-  const [qty, setQty] = useState(1); 
-
+  const { addItem } = useContext(CartContext);
+  const [qty, setQty] = useState(1);
+  
   const product = productosData.find((p) => p.id === itemId);
 
   const handleAddToCart = () => {
@@ -18,12 +35,10 @@ export default function ItemDetail() {
       addItem({
         id: product.id,
         nombre: product.nombre,
-        price: product.precio || 0, 
+        price: product.precio || 0,
         imagen: product.imagen,
         qty,
       });
-
-      // SweetAlert: Confirmación de que se agregó el producto
       Swal.fire({
         title: 'Producto agregado',
         text: `${product.nombre} ha sido agregado al carrito.`,
@@ -32,7 +47,7 @@ export default function ItemDetail() {
         imageHeight: 200,
         imageAlt: product.nombre,
         icon: 'success',
-        timer: 2000, // Desaparece automáticamente después de 2 segundos
+        timer: 2000,
         showConfirmButton: false,
       });
     }
@@ -43,38 +58,104 @@ export default function ItemDetail() {
   }
 
   return (
-    <Box p={6} maxW="900px" mx="auto" bg="white" borderRadius="md" boxShadow="lg" mt={10}>
-      <Stack direction={{ base: 'column', md: 'row' }} spacing={10}>
-        <Image
-          src={product.imagen}
-          alt={product.nombre}
-          borderRadius="md"
-          objectFit="cover"
-          boxSize={{ base: '100%', md: '400px' }} 
-          boxShadow="md"
-        />
-        <VStack align="start" spacing={4}>
-          <Heading as="h2" size="xl" textAlign="center" color="gray.700">
-            {product.nombre}
-          </Heading>
-          <Text fontSize="2xl" fontWeight="bold" color="pink.600">
-            ${product.precio}
-          </Text>
-          <Text fontSize="md" color="gray.600">
-            {product.descripcion}
-          </Text>
+    <Container maxW={'7xl'}>
+      <SimpleGrid
+        columns={{ base: 1, lg: 2 }}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 18, md: 24 }}>
+        <Flex>
+          <Image
+            rounded={'md'}
+            alt={product.nombre}
+            src={product.imagen}
+            fit={'cover'}
+            align={'center'}
+            w={'100%'}
+            h={{ base: '100%', sm: '400px', lg: '500px' }}
+          />
+        </Flex>
+        <Stack spacing={{ base: 6, md: 10 }}>
+          <Box as={'header'}>
+            <Heading
+              lineHeight={1.1}
+              fontWeight={600}
+              color='pink.500'
+              fontSize={{ base: '2xl', sm: '4xl', lg: '5xl' }}>
+              {product.nombre}
+            </Heading>
+            <Text
+              color={useColorModeValue('pink.500', 'pink.300')}
+              fontWeight={300}
+              fontSize={'2xl'}>
+              ${product.precio}
+            </Text>
+          </Box>
+
+          <Stack
+            spacing={{ base: 4, sm: 6 }}
+            direction={'column'}
+            divider={
+              <StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />
+            }>
+            <VStack spacing={{ base: 4, sm: 6 }}>
+              <Text
+                color={useColorModeValue('pink.500', 'pink.300')}
+                fontSize={'2xl'}
+                fontWeight={'300'}>
+                {product.descripcion}
+              </Text>
+            </VStack>
+
+            <Box>
+              <Text
+                fontSize={{ base: '16px', lg: '18px' }}
+                color={useColorModeValue('pink.500', 'pink.300')}
+                fontWeight={'500'}
+                textTransform={'uppercase'}
+                mb={'4'}>
+                Detalles del producto
+              </Text>
+
+              <List spacing={2}>
+                <ListItem>
+                  <Text as={'span'} fontWeight={'bold'}>
+                    Stock disponible:
+                  </Text>{' '}
+                  {product.stock}
+                </ListItem>
+                <ListItem>
+                  <Text as={'span'} fontWeight={'bold'}>
+                    Categorías:
+                  </Text>{' '}
+                  {product.categorias.join(', ')}
+                </ListItem>
+              </List>
+            </Box>
+          </Stack>
+
           <Button
-            onClick={handleAddToCart}
-            colorScheme="pink"
-            size="lg"
-            w="full"
-            mt={4}
-            _hover={{ bg: "pink.700" }}
-          >
+            rounded={'none'}
+            w={'full'}
+            mt={8}
+            size={'lg'}
+            py={'7'}
+            bg={useColorModeValue('pink.500', 'gray.50')}
+            color={useColorModeValue('white', 'gray.900')}
+            textTransform={'uppercase'}
+            _hover={{
+              transform: 'translateY(2px)',
+              boxShadow: 'lg',
+            }}
+            onClick={handleAddToCart}>
             Agregar al carrito
           </Button>
-        </VStack>
-      </Stack>
-    </Box>
+
+          <Stack direction="row" alignItems="center" justifyContent={'center'}>
+            <MdLocalShipping />
+            <Text>Entrega en 2-3 días hábiles</Text>
+          </Stack>
+        </Stack>
+      </SimpleGrid>
+    </Container>
   );
 }
