@@ -1,12 +1,11 @@
-//src/components/Checkout/Checkout.jsx
 import { useContext } from "react";
-import { Box, Text, Button, VStack, HStack, Spacer, Heading, useToast } from "@chakra-ui/react";
+import { Box, Text, Button, VStack, HStack, Spacer, Heading, useToast, Stack, Container, SimpleGrid, Divider } from "@chakra-ui/react";
 import { CartContext } from "../../context/CartContext";
 import { useAuth } from "../../context/AuthContext"; // Importa el contexto de autenticación
 
 export const Checkout = () => {
   const { cartState } = useContext(CartContext);
-  const { currentUser } = useAuth(); // Cambiado a currentUser
+  const { currentUser } = useAuth();
   const toast = useToast();
 
   // Calcular el total del carrito
@@ -19,7 +18,7 @@ export const Checkout = () => {
       mensaje += `${item.nombre} (x${item.qty}): $${(item.price * item.qty).toFixed(2)}\n`;
     });
     mensaje += `\nTotal: $${total.toFixed(2)}`;
-    return encodeURIComponent(mensaje); // Codificar el mensaje para URL
+    return encodeURIComponent(mensaje); 
   };
 
   // Función para manejar el clic en Checkout
@@ -35,7 +34,7 @@ export const Checkout = () => {
       return;
     }
 
-    if (!currentUser) { // Cambiado a currentUser
+    if (!currentUser) { 
       toast({
         title: "Debes iniciar sesión para continuar.",
         description: "Por favor, inicia sesión para realizar tu compra.",
@@ -46,50 +45,79 @@ export const Checkout = () => {
       return;
     }
 
-    const numeroWhatsApp = "5491165726162"; // Número de WhatsApp en formato internacional
+    const numeroWhatsApp = "5491165726162"; 
     const mensaje = generarMensajeWhatsApp();
     const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
 
-    // Abrir WhatsApp con el mensaje predefinido
     window.open(url, "_blank");
   };
 
   return (
-    <Box p={6} maxW="800px" mx="auto">
-      <Heading as="h2" size="lg" mb={6} textAlign="center">
-        Detalles del Carrito
-      </Heading>
+    <Box minH="100vh" display="flex" flexDirection="column">
+      <Container maxW="container.lg" py={10} flex="1">
+        <Stack spacing={6}>
+          <Heading as="h2" size="xl" textAlign="center" color="pink.500">
+            Resumen de tu Pedido
+          </Heading>
 
-      {cartState.length === 0 ? (
-        <Text>Tu carrito está vacío.</Text>
-      ) : (
-        <VStack spacing={4} align="stretch">
-          {cartState.map((item) => (
-            <HStack key={item.id} p={4} borderWidth="1px" borderRadius="md" boxShadow="sm">
-              <Text>{item.nombre} (x{item.qty})</Text>
-              <Spacer />
-              <Text fontWeight="bold">${(item.price * item.qty).toFixed(2)}</Text>
-            </HStack>
-          ))}
-          <Spacer />
-          <HStack>
-            <Text fontSize="2xl" fontWeight="bold">
-              Total: ${total.toFixed(2)}
-            </Text>
-          </HStack>
-
-          {/* Mostrar mensaje para iniciar sesión si no está autenticado */}
-          {!currentUser ? (
-            <Text color="red.500" mt={4}>
-              Por favor, inicia sesión para realizar la compra.
+          {cartState.length === 0 ? (
+            <Text fontSize="lg" color="gray.600" textAlign="center">
+              Tu carrito está vacío.
             </Text>
           ) : (
-            <Button colorScheme="pink" onClick={handleCheckout} mt={4}>
-              Enviar Pedido por WhatsApp
-            </Button>
+            <>
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+                {cartState.map((item) => (
+                  <Box
+                    key={item.id}
+                    borderWidth="1px"
+                    borderRadius="md"
+                    boxShadow="lg"
+                    p={4}
+                    bg="white"
+                  >
+                    <HStack justifyContent="space-between">
+                      <Text fontSize="lg" fontWeight="bold" color="pink.600">
+                        {item.nombre} (x{item.qty})
+                      </Text>
+                      <Text fontSize="lg" color="gray.600">
+                        ${(item.price * item.qty).toFixed(2)}
+                      </Text>
+                    </HStack>
+                  </Box>
+                ))}
+              </SimpleGrid>
+
+              <Divider />
+
+              <HStack justifyContent="space-between" py={4}>
+                <Text fontSize="2xl" fontWeight="bold" color="gray.700">
+                  Total:
+                </Text>
+                <Text fontSize="2xl" fontWeight="bold" color="pink.600">
+                  ${total.toFixed(2)}
+                </Text>
+              </HStack>
+
+              {!currentUser ? (
+                <Text color="red.500" fontSize="lg" textAlign="center">
+                  Por favor, inicia sesión para realizar la compra.
+                </Text>
+              ) : (
+                <Button
+                  size="lg"
+                  colorScheme="pink"
+                  w="full"
+                  onClick={handleCheckout}
+                  _hover={{ bg: "pink.600" }}
+                >
+                  Enviar Pedido por WhatsApp
+                </Button>
+              )}
+            </>
           )}
-        </VStack>
-      )}
+        </Stack>
+      </Container>
     </Box>
   );
 };

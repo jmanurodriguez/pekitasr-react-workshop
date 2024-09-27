@@ -12,7 +12,7 @@ export const CartWidget = () => {
   const qtyTotalItems = cartState.reduce((acc, item) => acc + item.qty, 0);
 
   return (
-    <Link to="/cart"> {/* Ahora todo el ícono y el texto son clickeables */}
+    <Link to="/cart">
       <Flex alignItems={"center"} height={"100%"} justifyContent={"space-between"} width={"60px"}>
         <BsMinecart size={30} />
         <Text fontSize={"1.5rem"} ml={2}>

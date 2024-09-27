@@ -1,4 +1,3 @@
-// src/components/PromoModal/PromoModal.jsx
 import React, { useEffect } from "react";
 import {
   Modal,
@@ -16,7 +15,6 @@ export const PromoModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
-    // Abrir el modal automáticamente al cargar la página
     onOpen();
   }, [onOpen]);
 
@@ -26,31 +24,18 @@ export const PromoModal = () => {
       <ModalContent>
         <ModalHeader>Promoción</ModalHeader>
         <ModalCloseButton />
-        <ModalBody>
-          <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "0",
-              paddingTop: "83.8298%",
-              paddingBottom: "0",
-              boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
-              overflow: "hidden",
-              borderRadius: "8px",
-              willChange: "transform",
-            }}
-          >
+        <ModalBody p={0}>
+          <div style={{ position: "relative", paddingTop: "56.25%" }}>
             <iframe
               loading="lazy"
               style={{
                 position: "absolute",
+                top: 0,
+                left: 0,
                 width: "100%",
                 height: "100%",
-                top: "0",
-                left: "0",
                 border: "none",
-                padding: "0",
-                margin: "0",
+                borderRadius: "8px",
               }}
               src="https://www.canva.com/design/DAGL-VNhq5Q/Ohu39Dtysbmp8haQCHFsew/view?embed"
               allowFullScreen

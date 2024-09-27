@@ -1,4 +1,3 @@
-//src/components/ProductCarousel/ProductCarousel.jsx
 import React from 'react';
 import {
   Box,
@@ -9,9 +8,8 @@ import {
 } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
-import { Item } from '../Item/Item'; // Asegúrate de que la ruta sea correcta
+import { Item } from '../Item/Item';
 
-// Configuración del carrusel
 const settings = {
   dots: true,
   arrows: false,
@@ -19,25 +17,25 @@ const settings = {
   autoplay: true,
   speed: 500,
   autoplaySpeed: 5000,
-  slidesToShow: 3, // Cambiar a 3 para mostrar 3 productos
+  slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2, // Mantener 3 productos en pantallas grandes
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2, // Mostrar 2 productos en pantallas medianas
+        slidesToShow: 2,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1, // Mostrar 1 producto en pantallas pequeñas
+        slidesToShow: 1,
       },
     },
   ],
@@ -60,7 +58,7 @@ export const ProductCarousel = ({ products }) => {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      
+
       <IconButton
         aria-label="left-arrow"
         variant="ghost"
@@ -73,7 +71,7 @@ export const ProductCarousel = ({ products }) => {
       >
         <BiLeftArrowAlt size="40px" />
       </IconButton>
-      
+
       <IconButton
         aria-label="right-arrow"
         variant="ghost"
@@ -86,13 +84,13 @@ export const ProductCarousel = ({ products }) => {
       >
         <BiRightArrowAlt size="40px" />
       </IconButton>
-      
+
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {products.map((product) => (
           <Box key={product.id} height={'auto'} position="relative">
             <Container size="container.lg" height="auto" position="relative">
               <Stack spacing={6} w={'full'} maxW={'lg'} position="relative">
-                <Item producto={product} /> {/* Renderizamos cada producto */}
+                <Item producto={product} />
               </Stack>
             </Container>
           </Box>
