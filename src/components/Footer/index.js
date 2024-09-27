@@ -1,1 +1,2 @@
-export { Footer } from './Footer';
+//src/components/Footer/index.js
+export * from './Footer';   

@@ -1,26 +1,32 @@
-//src/hooks/useProducts.jsx
+// src/hooks/useProducts.jsx
 import { useState, useEffect } from "react";
-import productosData from "../data/productos.json";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase";
 
 export const useProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null); // Nueva variable para manejar errores
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
-    setError(null);
+    const fetchProducts = async () => {
+      try {
+        const productsCollection = collection(db, "products");
+        const snapshot = await getDocs(productsCollection);
+        const fetchedProducts = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setProducts(fetchedProducts);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-    try {
-      // Simulación de la obtención de todos los productos
-      setProducts(productosData);
-    } catch (err) {
-      setError('Error al cargar los productos');
-    } finally {
-      setLoading(false);
-    }
+    fetchProducts();
   }, []);
 
-  // El return debe estar dentro de la función useProducts
   return { products, loading, error };
 };

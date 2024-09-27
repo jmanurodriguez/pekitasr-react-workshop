@@ -10,4 +10,10 @@ export default defineConfig({
       // Otros alias...
     },
   },
+  build: {
+    outDir: 'dist',  // Aquí se definirá la carpeta donde se guardará el build
+    rollupOptions: {
+      input: './index.html',  // Asegúrate de que esté apuntando a tu index.html
+    },
+  },
 });

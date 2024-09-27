@@ -1,5 +1,4 @@
-'use client'
-
+//src/components/Footer/Footer.jsx
 import {
   Box,
   chakra,
@@ -12,56 +11,45 @@ import {
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-// Logo de Pekitas
-const Logo = () => {
-  return (
-    <Image
-      src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp" // Cambia la URL por el logo de Pekitas
-      filter="brightness(0) invert(1)" // Hace que el logo sea blanco
-      alt="Pekitas Logo"
-      boxSize="50px"
-    />
-  );
-};
-
-// Eliminar los tipos de TypeScript y convertir a JavaScript puro
-const SocialButton = ({ children, label, href }) => {
-  return (
-    <chakra.button
-      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-      rounded={'full'}
-      w={8}
-      h={8}
-      cursor={'pointer'}
-      as={'a'}
-      href={href}
-      display={'inline-flex'}
-      alignItems={'center'}
-      justifyContent={'center'}
-      transition={'background 0.3s ease'}
-      _hover={{
-        bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-      }}>
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </chakra.button>
-  );
-};
+const SocialButton = ({ children, label, href }) => (
+  <chakra.button
+    bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+    rounded={'full'}
+    w={8}
+    h={8}
+    cursor={'pointer'}
+    as={'a'}
+    href={href}
+    display={'inline-flex'}
+    alignItems={'center'}
+    justifyContent={'center'}
+    transition={'background 0.3s ease'}
+    _hover={{
+      bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+    }}>
+    <VisuallyHidden>{label}</VisuallyHidden>
+    {children}
+  </chakra.button>
+);
 
 export default function Footer() {
   return (
-    <Box
-      bg={'pink.500'} // Ajustamos el color del fondo del footer
-      color={'white'} // Ajustamos el color del texto a blanco, como en el botón
-    >
-      <Container
-        as={Stack}
-        maxW={'6xl'}
-        py={4}
-        spacing={4}
-        justify={'center'}
-        align={'center'}>
-        <Logo />
+    <Box bg={'pink.500'} color={'white'}>
+      <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
+        <figure>
+          <a href="#">
+            <Image
+              src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
+              alt="Logo de Pekitas Ecotienda"
+              boxSize="100px"
+              border="1px solid white" // Borde blanco
+              borderRadius="full" // Hace el borde redondeado
+              objectFit="contain"
+              filter="brightness(0) invert(1)"
+              loading="lazy"
+            />
+          </a>
+        </figure>
         <Stack direction={'row'} spacing={6}>
           <Box as="a" href={'#'} color="white">
             Home

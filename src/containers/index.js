@@ -1,3 +1,4 @@
 // src/containers/index.js
-export { ItemListContainer } from './ItemListContainer';
-export { ItemDetailContainer } from './ItemDetailContainer';
+export * from './ItemListContainer';
+export * from './ItemDetailContainer';
+export * from './HomeContainer'

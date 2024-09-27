@@ -1,6 +1,9 @@
-// src/components/Navbar/index.js
-export { Navbar } from './Navbar';
-export { Item } from './Item';
-export { ItemListContainer } from './ItemListContainer'; // Exporta correctamente ItemListContainer
-export { CardWidget } from './CardWidget';
-export { ItemDetailContainer } from './ItemDetailContainer';
+// src/components/index.js
+export * from './Navbar';
+export * from './Item';
+export * from './CartWidget';
+export * from './CartDetails';
+export * from './ItemListContainer';
+export * from './Banner';
+export * from './PromoModal';
+export * from './Footer';

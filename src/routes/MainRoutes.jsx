@@ -1,16 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Category, Home, Item } from "../pages";
-import { Navbar } from "../components";
+//src/routes/MainRoutes.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home } from '../pages/Home';
+import { Category } from '../pages/Category';
+import ItemDetail from '../pages/ItemDetail';
+import { CartDetails } from '../components/CartDetails';
+import { Checkout } from '../pages/Checkout';  // Importa el componente de Checkout
 
-export const MainRouter = () => {
+export const MainRoutes = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:categoryId" element={<Category />} />
-        <Route path="/item/:itemId" element={<Item />} /> {/* Ajusta el parámetro a itemId si es necesario */}
+        <Route path="/item/:itemId" element={<ItemDetail />} />
+        <Route path="/cart" element={<CartDetails />} />
+        <Route path="/checkout" element={<Checkout />} /> {/* Nueva ruta para el Checkout */}
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };

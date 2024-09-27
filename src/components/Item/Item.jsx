@@ -13,6 +13,10 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export function Item({ producto }) {
+  const categorias = Array.isArray(producto.categorias) 
+    ? producto.categorias 
+    : [producto.categorias];
+
   return (
     <Box
       maxW="sm"
@@ -32,10 +36,10 @@ export function Item({ producto }) {
         alt={producto.nombre}
         objectFit="cover"
         w="100%"
-        h="250px"
+        h={{ base: "200px", md: "250px", lg: "300px" }} // Aseguramos que el tamaño de la imagen cambie según el dispositivo
       />
 
-      <Box p="6">
+      <Box p={4}>
         <Flex alignItems="baseline">
           <Badge borderRadius="full" px="2" colorScheme="green">
             Nuevo
@@ -45,14 +49,14 @@ export function Item({ producto }) {
             fontSize="sm"
             ml="2"
           >
-            {producto.categorias.join(", ")}
+            {categorias.join(", ")}
           </Text>
         </Flex>
 
         <VStack spacing={2} align="start" mt={3}>
           <Text
             fontWeight="bold"
-            fontSize="lg"
+            fontSize={{ base: "sm", md: "lg" }} // Ajustamos el tamaño del texto
             as="h4"
             textAlign="left"
             lineHeight="tight"
@@ -62,11 +66,15 @@ export function Item({ producto }) {
             {producto.nombre}
           </Text>
 
-          {producto.descripcion && ( // Verificación antes de usar slice
-            <Text fontSize="md" color={useColorModeValue("gray.600", "gray.300")}>
+          {producto.descripcion && (
+            <Text fontSize="sm" color={useColorModeValue("gray.600", "gray.300")}>
               {producto.descripcion.slice(0, 50)}...
             </Text>
           )}
+
+          <Text fontSize="sm" color={useColorModeValue("gray.500", "gray.400")}>
+            Stock disponible: {producto.stock}
+          </Text>
 
           <Text fontWeight="bold" fontSize="xl" color="pink.500">
             ${producto.precio}
@@ -91,11 +99,18 @@ export function Item({ producto }) {
 
 Item.propTypes = {
   producto: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    id: PropTypes.oneOfType([ 
+      PropTypes.string,
+      PropTypes.number,
+    ]).isRequired,
     nombre: PropTypes.string.isRequired,
     imagen: PropTypes.string.isRequired,
     precio: PropTypes.number.isRequired,
-    descripcion: PropTypes.string, // No es requerido para evitar el error
-    categorias: PropTypes.arrayOf(PropTypes.string).isRequired,
+    descripcion: PropTypes.string, 
+    stock: PropTypes.number.isRequired,
+    categorias: PropTypes.oneOfType([ 
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.string
+    ]).isRequired, 
   }).isRequired,
 };
