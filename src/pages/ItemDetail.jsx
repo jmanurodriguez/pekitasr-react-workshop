@@ -37,12 +37,15 @@ export default function ItemDetail() {
         qty,
       });
 
+      const screenWidth = window.innerWidth;
+      const imageSize = screenWidth < 768 ? 200 : 400;
+
       Swal.fire({
         title: 'Producto agregado',
         text: `${product.nombre} ha sido agregado al carrito.`,
         imageUrl: product.imagen,
-        imageWidth: 400,
-        imageHeight: 200,
+        imageWidth: imageSize,
+        imageHeight: imageSize * (200 / 400), 
         imageAlt: product.nombre,
         icon: 'success',
         timer: 2000,
@@ -137,7 +140,7 @@ export default function ItemDetail() {
                   </Text>{' '}
                   {product.stock}
                 </ListItem>
-                {/* Agrega más detalles si es necesario */}
+                
               </List>
             </Box>
           </Stack>

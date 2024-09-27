@@ -49,10 +49,8 @@ export const Home = () => {
       <Banner />
       <Hero />
 
-      {/* Sección de carrusel de productos */}
-      <ProductCarousel products={products} /> {/* Asegúrate de pasar los productos */}
-
-      {/* Sección Sobre Nosotros */}
+      
+      <ProductCarousel products={products} /> 
       <Box id="sobre-nosotros" p="12" maxW="7xl" mx="auto">
         <Heading as="h1" mb={6} color="pink.500">
           Conoce más sobre nosotros
@@ -98,7 +96,6 @@ export const Home = () => {
 
       <Divider my={6} />
 
-      {/* Listado de Productos */}
       <Box id="productos">
         <Heading as="h1" mb={6} color="pink.500" textAlign="center">
           Nuestros Productos
