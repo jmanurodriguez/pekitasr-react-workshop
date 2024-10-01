@@ -1,14 +1,14 @@
 import { createContext, useReducer } from 'react';
 
-// Crear el contexto del carrito
+
 export const CartContext = createContext();
 
-// Definir las acciones del carrito
+
 const ADD_ITEM = 'ADD_ITEM';
 const REMOVE_ITEM = 'REMOVE_ITEM';
 const DELETE_ITEM = 'DELETE_ITEM';
 
-// Reducer para manejar el estado del carrito
+
 const cartReducer = (state, action) => {
   switch (action.type) {
     case ADD_ITEM: {
@@ -38,7 +38,7 @@ const cartReducer = (state, action) => {
   }
 };
 
-// Proveedor del contexto del carrito
+
 export const CartProvider = ({ children }) => {
   const [cartState, dispatch] = useReducer(cartReducer, []);
 

@@ -39,7 +39,7 @@ import {
   export const AboutUs = () => {
     return (
       <Box as="section" w="100%" m="0" p="0"> 
-        {/* Aquí agregamos el componente Banner */}
+        
         <Banner /> 
   
         <Container maxW={'7xl'} p="12" mt="0">
@@ -47,7 +47,7 @@ import {
             Sobre Pekitas Ecotienda
           </Heading>
           
-          {/* Resto del contenido */}
+         
           <Box
             marginTop={{ base: '1', sm: '5' }}
             display="flex"
@@ -118,14 +118,14 @@ import {
             </Box>
           </Box>
     
-          {/* Separador con ícono */}
+         
           <Flex justifyContent="center" alignItems="center" my={10}>
             <Divider borderColor="pink.500" width="40%" />
             <Icon as={FaLeaf} color="pink.500" mx={2} boxSize={8} />
             <Divider borderColor="pink.500" width="40%" />
           </Flex>
     
-          {/* Segunda sección */}
+          
           <Heading as="h2" marginTop="5" color="pink.500" textAlign="center">
             Nuestro Compromiso
           </Heading>

@@ -2,7 +2,7 @@
 
 import productosData from '../data/productos.json';
 
-// Simula una solicitud para obtener todos los productos
+
 export const getProductos = (simulateError = false) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -16,7 +16,7 @@ export const getProductos = (simulateError = false) => {
 };
 
 
-// Simula una solicitud para obtener los detalles de un producto por su ID
+
 export const getProductoById = (id) => {
   return new Promise((resolve, reject) => {
     const producto = productosData.find((prod) => prod.id === id);

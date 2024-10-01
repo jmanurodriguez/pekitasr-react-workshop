@@ -44,7 +44,7 @@ import {
                 duration: 5000,
                 isClosable: true,
             });
-            navigate('/');  // Redirigir a la página principal o la que desees
+            navigate('/');  
         } catch (error) {
             toast({
                 title: 'Error al iniciar sesión.',

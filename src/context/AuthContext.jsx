@@ -15,7 +15,6 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Registro con email y contraseña
   const signup = async (email, password) => {
     try {
       const userCredential = await registerWithEmailAndPassword(email, password);
@@ -27,7 +26,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Iniciar sesión con email y contraseña
+  
   const loginWithEmail = async (email, password) => {
     try {
       const userCredential = await signInWithEmail(email, password);
@@ -39,43 +38,41 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Iniciar sesión con Google usando pop-up
   const loginWithGoogle = async () => {
     try {
       const result = await signInWithGoogle();
       setCurrentUser(result.user);
-      navigate('/'); // Redirigir después de una autenticación exitosa
+      navigate('/');
     } catch (error) {
       console.error("Error al iniciar sesión con Google:", error);
       throw error;
     }
   };
 
-  // Cerrar sesión
+
   const logout = async () => {
     try {
       await logOut();
       setCurrentUser(null);
-      navigate('/login'); // Redirigir al login después de cerrar sesión
+      navigate('/login'); 
     } catch (error) {
       console.error("Error al cerrar sesión:", error);
     }
   };
 
-  // Vigilar cambios en el usuario autenticado
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
-      setLoading(false); // Cambiar a false una vez que se ha verificado el usuario
+      setLoading(false); 
     });
 
     return unsubscribe;
   }, []);
 
-  // Solo redirigir si hay un usuario autenticado
+
   useEffect(() => {
     if (currentUser) {
-      console.log("Usuario autenticado, no redirigir automáticamente");
     }
   }, [currentUser]);
 
@@ -88,7 +85,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   if (loading) {
-    return null; // O un loader mientras se verifica el estado del usuario
+    return null; 
   }
 
   return (

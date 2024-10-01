@@ -7,9 +7,6 @@ export const Category = () => {
   const { categoryId } = useParams();
   const { products } = useProductsByCategory(categoryId); 
 
-  
-  console.log('Categoría:', categoryId);
-  console.log('Productos filtrados:', products);
 
   return (
     <>

@@ -10,17 +10,17 @@ import {
   Icon,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom"; // Importar useNavigate
+import { useNavigate } from "react-router-dom"; 
 
 export const Hero = () => {
-  const navigate = useNavigate(); // Definir el hook useNavigate
+  const navigate = useNavigate(); 
 
   const handleDiscoverMore = () => {
-    navigate("/upcoming-products"); // Redirigir a la página de próximos productos
+    navigate("/upcoming-products"); 
   };
 
   const handleHowToBuy = () => {
-    navigate("/how-to-buy"); // Redirigir a la página de cómo comprar
+    navigate("/how-to-buy"); 
   };
 
   return (
@@ -30,7 +30,7 @@ export const Hero = () => {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 16, md: 24 }}
         direction={{ base: "column", md: "row" }}
-        textAlign={{ base: "center", md: "left" }} // Centrado en móvil, alineado a la izquierda en pantallas más grandes
+        textAlign={{ base: "center", md: "left" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
@@ -77,7 +77,7 @@ export const Hero = () => {
               colorScheme={"pink"}
               bg={"pink.400"}
               _hover={{ bg: "pink.500" }}
-              onClick={handleDiscoverMore} // Añadir evento onClick para redirigir
+              onClick={handleDiscoverMore} 
             >
               Descubre Más
             </Button>
@@ -88,7 +88,7 @@ export const Hero = () => {
               px={6}
               bg={"gray.300"}
               _hover={{ bg: "gray.400" }}
-              onClick={handleHowToBuy} // Añadir el evento onClick para redirigir a "Cómo comprar"
+              onClick={handleHowToBuy} 
             >
               ¿Cómo comprar?
             </Button>

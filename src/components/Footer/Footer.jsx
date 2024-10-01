@@ -9,7 +9,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Importar Link
+import { Link } from 'react-router-dom'; 
 
 const SocialButton = ({ children, label, href }) => (
   <chakra.button

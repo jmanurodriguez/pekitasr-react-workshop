@@ -79,7 +79,7 @@ import {
             </SimpleGrid>
           </Container>
   
-          {/* Sección de métodos de pago */}
+          
           <Box bg={useColorModeValue('gray.50', 'gray.800')} py={10}>
             <Container maxW={'5xl'}>
               <Stack spacing={4} textAlign={'center'}>

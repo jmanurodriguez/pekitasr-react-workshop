@@ -2,7 +2,7 @@
 import { db } from './../firebase';
 import { collection, getDocs, addDoc } from 'firebase/firestore';
 
-// Obtener todos los productos desde Firestore
+
 export async function getAllProducts() {
   try {
     const productsCollection = collection(db, 'products');
@@ -18,14 +18,14 @@ export async function getAllProducts() {
       ...doc.data(),
     }));
 
-    return products;  // Retornar los productos como array
+    return products;  
   } catch (err) {
     console.error('Error al obtener productos:', err);
     throw err;
   }
 }
 
-// Añadir productos a Firestore desde un array
+
 export async function createProductsFirestore(collectionName, products) {
   try {
     if (!Array.isArray(products)) {
@@ -43,7 +43,6 @@ export async function createProductsFirestore(collectionName, products) {
 
     await Promise.all(addPromises);
 
-    console.log(`${products.length} productos añadidos a Firestore.`);
   } catch (err) {
     console.error('Error al almacenar productos:', err);
   }

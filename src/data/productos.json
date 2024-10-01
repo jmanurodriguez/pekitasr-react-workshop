@@ -2,7 +2,7 @@
   {
     "id": "001",
     "nombre": "Desodorante Solido",
-    "precio": 2000,
+    "precio": 4000,
     "imagen": "https://i.ibb.co/CsM13Wr/desodorante-solido-16-11zon.webp",
     "categorias": ["higiene", "cuidado-personal"],
     "stock": 10,
@@ -20,7 +20,7 @@
   {
     "id": "003",
     "nombre": "Serúm Capilar",
-    "precio": 3500,
+    "precio": 3800,
     "imagen": "https://i.ibb.co/NNCNjyM/nosotros2-25-11zon.webp",
     "categorias": ["cuidado-personal"],
     "stock": 10,
@@ -133,5 +133,26 @@
     "categorias": ["cuidado-personal"],
     "stock": 10,
     "descripcion": "Crema para peinar de mango, ideal para nutrir y definir el cabello rizado o seco. Proporciona brillo y control durante todo el día."
+  },
+  {
+    "id": "016",
+    "nombre": "Balsamo Labial en Lata",
+    "precio": 2500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727814281/afbv1gc36qgxdd1vwiml.jpg",
+    "categorias": ["cuidado-personal"],
+    "stock": 10,
+    "descripcion": "Menta y limón: voluminiza, refresca e hidrata (verde). Achiote y coco: tropical, nutre y protege del sol (naranja). Cereza: Diseñado para rejuvenecer tus labios y con un riquísimo aroma a cereza (rojo). Ideal para llevarlo a todos lados, económico, super rendidor, cruelty free, natural y ecológico."
+  },
+  {
+    "id": "017",
+    "nombre": "Desodorante Natural en Lata",
+    "precio": 3500,
+    "imagen": "https://res-console.cloudinary.com/dpcpcnqmq/thumbnails/v1/image/upload/v1727814281/ZmZreW11amMyMTF6c3NyYXVlbTU=/drilldown",
+    "categorias": ["higiene", "cuidado-personal"],
+    "stock": 10,
+    "descripcion": "Menta y limón: voluminiza, refresca e hidrata (verde). Achiote y coco: tropical, nutre y protege del sol (naranja). Cereza: Diseñado para rejuvenecer tus labios y con un riquísimo aroma a cereza (rojo). Ideal para llevarlo a todos lados, económico, super rendidor, cruelty free, natural y ecológico."
   }
 ]
+
+
+

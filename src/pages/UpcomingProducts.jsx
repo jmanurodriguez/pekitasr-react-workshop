@@ -11,11 +11,11 @@ import {
   useColorModeValue,
   Container,
   VStack,
-  Flex, // Asegurarse de que Flex esté importado
-  Icon, // Asegurarse de que Icon esté importado
+  Flex, 
+  Icon, 
 } from '@chakra-ui/react';
-import { FaLeaf } from 'react-icons/fa'; // Icono FaLeaf desde react-icons
-import { Banner } from "../components/Banner"; // Si tienes el componente Banner
+import { FaLeaf } from 'react-icons/fa'; 
+import { Banner } from "../components/Banner"; 
 
 const BlogTags = ({ tags, marginTop }) => {
   return (
@@ -40,7 +40,7 @@ const BlogAuthor = ({ date }) => {
 export const UpcomingProducts = () => {
   return (
     <Box as="section" w="100%" m="0" p="0">
-      <Banner /> {/* Asegurarte que Banner esté implementado correctamente */}
+      <Banner /> 
 
       <Container maxW={'7xl'} p="12">
         <Heading as="h1" color="pink.500" textAlign="center">

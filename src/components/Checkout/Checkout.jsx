@@ -9,10 +9,10 @@ export const Checkout = () => {
   const { currentUser } = useAuth();
   const toast = useToast();
 
-  // Calcular el total del carrito
+
   const total = cartState.reduce((acc, item) => acc + (item.price ?? 0) * (item.qty ?? 1), 0);
 
-  // Función para generar el mensaje para WhatsApp
+
   const generarMensajeWhatsApp = () => {
     let mensaje = "Gracias por visitar Pekitas Ecotienda.\nEn breve atenderemos tu solicitud!!!\n\nDetalles de mi compra:\n\n";
     cartState.forEach((item) => {

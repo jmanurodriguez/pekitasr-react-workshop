@@ -100,7 +100,7 @@ export const CartDetails = () => {
               />
 
               <Box flex="1">
-                <Text fontSize="lg" fontWeight="bold" color={highlightColor}>  {/* Cambié el color aquí */}
+                <Text fontSize="lg" fontWeight="bold" color={highlightColor}>  
                   {item.nombre}
                 </Text>
                 <HStack spacing={4} mt={2} justify={{ base: "center", md: "flex-start" }}>

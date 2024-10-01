@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
 
 export function Item({ producto }) {
   const categorias = Array.isArray(producto.categorias) 
-    ? producto.categorias.slice(0, 2)  // Mostrar solo las primeras 2 categorías
+    ? producto.categorias.slice(0, 2)  
     : [producto.categorias];
 
   return (
@@ -51,9 +51,9 @@ export function Item({ producto }) {
             color={useColorModeValue("gray.500", "gray.400")}
             fontSize="sm"
             ml="2"
-            noOfLines={1}  // Asegurarnos de que el texto de categorías ocupe solo 1 línea
+            noOfLines={1}  
           >
-            {categorias.join(", ")}{/* Unimos las categorías */}
+            {categorias.join(", ")}
           </Text>
         </Flex>
 

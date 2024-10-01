@@ -159,7 +159,7 @@ export const Contact = () => {
 
   return (
     <>
-      {/* Incluye el banner si lo tienes */}
+      
       <Banner />
 
       <Container maxW="container.md" mt={10} mb={20}>

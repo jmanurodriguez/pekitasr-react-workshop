@@ -17,11 +17,11 @@ import {
   useToast,
 } from '@chakra-ui/react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom'; // Usamos `useNavigate` para redirigir después del registro exitoso
+import { useNavigate } from 'react-router-dom'; 
 
 export const Register = () => {
   const { signup } = useAuth();
-  const navigate = useNavigate(); // Para redirigir después de un registro exitoso
+  const navigate = useNavigate(); 
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -54,7 +54,7 @@ export const Register = () => {
           duration: 5000,
           isClosable: true,
         });
-        navigate('/'); // Redirigir a la página principal o a la que prefieras
+        navigate('/'); 
       }
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {

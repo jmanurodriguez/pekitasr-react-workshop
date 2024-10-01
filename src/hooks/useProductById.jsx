@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Box, Image, Text, Button, Heading, VStack, Stack } from "@chakra-ui/react";
-import { useProductById } from "../hooks/useProductById"; // Asegúrate de usar el hook correcto
+import { useProductById } from "../hooks/useProductById"; 
 
 const ItemDetail = () => {
   const { itemId } = useParams();
