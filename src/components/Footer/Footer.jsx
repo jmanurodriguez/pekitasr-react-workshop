@@ -1,4 +1,3 @@
-//src/components/Footer/Footer.jsx
 import {
   Box,
   chakra,
@@ -9,7 +8,7 @@ import {
   VisuallyHidden,
   Image,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // 
 
 const SocialButton = ({ children, label, href }) => (
   <chakra.button
@@ -37,13 +36,13 @@ export default function Footer() {
     <Box bg={'pink.500'} color={'white'}>
       <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
         <figure>
-          <a href="#">
+          <a href="/">
             <Image
               src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
               alt="Logo de Pekitas Ecotienda"
               boxSize="100px"
-              border="1px solid white" // Borde blanco
-              borderRadius="full" // Hace el borde redondeado
+              border="1px solid white"
+              borderRadius="full"
               objectFit="contain"
               filter="brightness(0) invert(1)"
               loading="lazy"
@@ -51,17 +50,17 @@ export default function Footer() {
           </a>
         </figure>
         <Stack direction={'row'} spacing={6}>
-          <Box as="a" href={'#'} color="white">
+          <Box as="a" href="/" color="white">
             Home
           </Box>
-          <Box as="a" href={'#'} color="white">
-            About
+          <Box as="a" href="/about-us" color="white">
+            Sobre Nosotros
           </Box>
-          <Box as="a" href={'#'} color="white">
-            Blog
+          <Box as="a" href="/#productos" color="white">
+            Nuestros Productos
           </Box>
-          <Box as="a" href={'#'} color="white">
-            Contact
+          <Box as="a" href="/contact" color="white">
+            Contacto
           </Box>
         </Stack>
       </Container>
@@ -81,14 +80,14 @@ export default function Footer() {
           align={{ base: 'center', md: 'center' }}>
           <Text>© 2023 Pekitas Ecotienda. Todos los derechos reservados</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
+            <SocialButton label={'WhatsApp'} href={'https://wa.me/1234567890?text=Hola,%20quiero%20saber%20más%20sobre%20Pekitas%20Ecotienda'}>
+              <FaWhatsapp />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'} href={'https://www.instagram.com/pekitasecotienda/'}>
               <FaInstagram />
+            </SocialButton>
+            <SocialButton label={'Email'} href={'mailto:contacto@pekitasecotienda.com'}>
+              <FaEnvelope /> 
             </SocialButton>
           </Stack>
         </Container>

@@ -51,7 +51,7 @@ export const Navbar = () => {
 
   const NavItems = () => (
     <>
-      <NavItem to="/#sobre-nosotros" onClick={onClose}>Sobre Nosotros</NavItem>
+      <NavItem to="/about-us" onClick={onClose}>Sobre Nosotros</NavItem>
       <NavItem to="/#productos" onClick={onClose}>Productos</NavItem>
       <NavItem to="/upcoming-products" onClick={onClose}>Próximos Productos</NavItem>
       <NavItem to="/contact" onClick={onClose}>Contacto</NavItem>

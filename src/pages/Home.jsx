@@ -1,15 +1,23 @@
 //src/pages/Home.jsx
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { ItemListContainer } from "../components";
 import { useProducts } from "../hooks/useProducts";
 import {
-  Text, Spinner, Center, Box, Flex, Image, Heading, Divider,
-  useColorModeValue, HStack
-} from '@chakra-ui/react';
-import { Hero } from '../components/Hero/Hero';
-import { Banner } from '../components/Banner';
-import { ProductCarousel } from '../components/ProductCarousel/ProductCarousel'; // Asegúrate de que la ruta sea correcta
+  Text,
+  Spinner,
+  Center,
+  Box,
+  Flex,
+  Image,
+  Heading,
+  Divider,
+  useColorModeValue,
+  HStack,
+} from "@chakra-ui/react";
+import { Hero } from "../components/Hero/Hero";
+import { Banner } from "../components/Banner";
+import { ProductCarousel } from "../components/ProductCarousel/ProductCarousel"; // Asegúrate de que la ruta sea correcta
 
 export const Home = () => {
   const { products, loading } = useProducts();
@@ -19,10 +27,10 @@ export const Home = () => {
 
   useEffect(() => {
     if (location.hash) {
-      const id = location.hash.replace('#', '');
+      const id = location.hash.replace("#", "");
       const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [location]);
@@ -49,14 +57,13 @@ export const Home = () => {
       <Banner />
       <Hero />
 
-      
-      <ProductCarousel products={products} /> 
+      <ProductCarousel products={products} />
       <Box id="sobre-nosotros" p="12" maxW="7xl" mx="auto">
         <Heading as="h1" mb={6} color="pink.500">
-          Conoce más sobre nosotros
+          Bienvenidos a Pekitas Ecotienda
         </Heading>
         <Flex
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: "column", md: "row" }}
           justifyContent="space-between"
         >
           <Box
@@ -73,7 +80,7 @@ export const Home = () => {
               objectFit="cover"
               width="100%"
               transition="0.3s ease-in-out"
-              _hover={{ transform: 'scale(1.05)' }}
+              _hover={{ transform: "scale(1.05)" }}
             />
           </Box>
 
@@ -81,14 +88,31 @@ export const Home = () => {
             flex="1"
             flexDirection="column"
             justifyContent="center"
-            mt={{ base: '3', md: '0' }}
+            mt={{ base: "3", md: "0" }}
           >
             <Heading as="h2" size="xl" color="pink.500" mb={4}>
-              Sobre Nosotros
+              Sumate a un cambio natural!!!
             </Heading>
-            <Text fontSize="lg" color={textColor} mb={4}>
-              Pekitas Ecotienda es más que una simple tienda, es una visión y un
-              compromiso con el futuro de nuestro planeta...
+            <Text fontSize="lg" color={textColor} mb={4}>Pekitas
+              Ecotienda es mucho más que una simple tienda de productos; es una
+              visión comprometida con el futuro del planeta. Desde sus inicios,
+              la tienda se ha enfocado en promover un estilo de vida consciente,
+              seleccionando productos que reflejan su compromiso con el medio
+              ambiente y las futuras generaciones. Cada producto en Pekitas es
+              cuidadosamente elegido para asegurar que sea orgánico, libre de
+              químicos dañinos y respetuoso con el entorno. Esta selección no es
+              solo comercial, sino un esfuerzo para fomentar el consumo
+              responsable y reducir la huella ecológica. A diferencia de las
+              tiendas convencionales, Pekitas se dedica a ofrecer alternativas
+              sostenibles, que no solo benefician a sus clientes, sino también
+              al planeta. La misión de Pekitas va más allá de la venta de
+              productos; busca educar a sus clientes sobre prácticas ecológicas
+              y saludables, ofreciendo productos para el cuidado personal,
+              alimentos y artículos para el hogar que son beneficiosos para el
+              bienestar individual y el medio ambiente. Al comprar en Pekitas
+              Ecotienda, no solo adquieres un producto de calidad, sino que te
+              unes a una comunidad comprometida con el cambio hacia un consumo
+              responsable y sostenible.
             </Text>
           </Box>
         </Flex>

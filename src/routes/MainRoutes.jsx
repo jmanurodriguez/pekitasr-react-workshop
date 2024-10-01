@@ -9,10 +9,11 @@ import { Checkout } from '../components/Checkout/Checkout';
 import { Contact } from '../pages/Contact';
 import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
-import { UpcomingProducts } from '../pages/UpcomingProducts'; // Importamos la nueva página
+import { UpcomingProducts } from '../pages/UpcomingProducts'; 
+import { AboutUs } from '../pages/AboutUs';
 
 export const MainRoutes = () => {
-  const { currentUser } = useAuth(); // Obtén el usuario actual del contexto
+  const { currentUser } = useAuth(); 
 
   return (
     <Routes>
@@ -31,6 +32,7 @@ export const MainRoutes = () => {
         element={currentUser ? <Checkout /> : <Navigate to="/login" />} 
       />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/about-us" element={<AboutUs />} /> 
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/upcoming-products" element={<UpcomingProducts />} /> {/* Añadir nueva ruta */}

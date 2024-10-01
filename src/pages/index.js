@@ -5,4 +5,5 @@ export * from './ItemDetail';
 export * from './Contact';
 export * from './Login'; 
 export * from './Register';
-export * from './UpcomingProducts'; // Exportamos la nueva página
+export * from './UpcomingProducts';
+export * from './AboutUs';
