@@ -1,4 +1,4 @@
-//src/components/Checkout/Checkout.jsx
+// src/components/Checkout/Checkout.jsx
 import { useContext } from "react";
 import { Box, Text, Button, VStack, HStack, Spacer, Heading, useToast, Stack, Container, SimpleGrid, Divider } from "@chakra-ui/react";
 import { CartContext } from "../../context/CartContext";
@@ -14,7 +14,7 @@ export const Checkout = () => {
 
   // Función para generar el mensaje para WhatsApp
   const generarMensajeWhatsApp = () => {
-    let mensaje = "Detalles de mi compra:\n\n";
+    let mensaje = "Gracias por visitar Pekitas Ecotienda.\nEn breve atenderemos tu solicitud!!!\n\nDetalles de mi compra:\n\n";
     cartState.forEach((item) => {
       mensaje += `${item.nombre} (x${item.qty}): $${(item.price * item.qty).toFixed(2)}\n`;
     });
@@ -22,7 +22,6 @@ export const Checkout = () => {
     return encodeURIComponent(mensaje); 
   };
 
-  // Función para manejar el clic en Checkout
   const handleCheckout = () => {
     if (cartState.length === 0) {
       toast({

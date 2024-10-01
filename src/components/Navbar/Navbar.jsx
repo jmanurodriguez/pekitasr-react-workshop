@@ -56,6 +56,7 @@ export const Navbar = () => {
       <NavItem to="/upcoming-products" onClick={onClose}>Próximos Productos</NavItem>
       <NavItem to="/contact" onClick={onClose}>Contacto</NavItem>
     </>
+    
   );
 
   return (
@@ -70,6 +71,7 @@ export const Navbar = () => {
         flexWrap="wrap"
         width="100%"
       >
+        
         <Flex align="center" flex={{ base: 1, md: 'auto' }}>
           <IconButton
             display={{ base: "flex", md: "none" }}

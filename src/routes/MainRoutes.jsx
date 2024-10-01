@@ -14,6 +14,7 @@ import { AboutUs } from '../pages/AboutUs';
 import { HowToBuy } from '../pages/HowToBuy';
 import { MdHowToReg } from 'react-icons/md';
 
+
 export const MainRoutes = () => {
   const { currentUser } = useAuth(); 
 
