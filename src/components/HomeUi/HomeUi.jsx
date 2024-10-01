@@ -11,7 +11,7 @@ import {
     <Center my={10}>
       <Box maxW="450px" boxShadow="lg" borderRadius="lg" overflow="hidden">
         <Image
-          src="https://ejemplo.com/promo_image.jpg"
+          src="https://res-console.cloudinary.com/dpcpcnqmq/media_explorer_thumbnails/276cb8e2e00dc05db44018385c7c98a5/detailed"
           alt="Imagen Promocional"
           objectFit="cover"
           borderRadius="md"

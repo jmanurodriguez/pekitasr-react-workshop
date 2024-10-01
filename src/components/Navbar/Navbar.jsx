@@ -30,6 +30,11 @@ export const Navbar = () => {
   const { currentUser, logout } = useAuth();
 
   const isMobile = useBreakpointValue({ base: true, md: false });
+  const logoBoxSize = useBreakpointValue({ base: "50px", sm: "60px", md: "70px" });
+  const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
+  const marginRight = useBreakpointValue({ base: 2, md: 4 });
+  const spacingValue = useBreakpointValue({ base: 6, md: 4 });
+  const fontSize = useBreakpointValue({ base: "xs", md: "sm" });
 
   const handleCategoryClick = (category) => {
     onClose();
@@ -48,6 +53,7 @@ export const Navbar = () => {
     <>
       <NavItem to="/#sobre-nosotros" onClick={onClose}>Sobre Nosotros</NavItem>
       <NavItem to="/#productos" onClick={onClose}>Productos</NavItem>
+      <NavItem to="/upcoming-products" onClick={onClose}>Próximos Productos</NavItem>
       <NavItem to="/contact" onClick={onClose}>Contacto</NavItem>
     </>
   );
@@ -64,7 +70,6 @@ export const Navbar = () => {
         flexWrap="wrap"
         width="100%"
       >
-       
         <Flex align="center" flex={{ base: 1, md: 'auto' }}>
           <IconButton
             display={{ base: "flex", md: "none" }}
@@ -76,21 +81,17 @@ export const Navbar = () => {
             size="md"
             mr={2}
           />
-          <HStack 
-            spacing={6} 
-            display={{ base: "none", md: "flex" }}
-          >
+          <HStack spacing={6} display={{ base: "none", md: "flex" }}>
             <NavItems />
           </HStack>
         </Flex>
 
-        
         <Flex justify="center" flex={{ base: 1, md: 1 }} px={2}>
           <RouterLink to="/">
             <Image
               src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
               alt="Pekitas Logo"
-              boxSize={useBreakpointValue({ base: "50px", sm: "60px", md: "70px" })}
+              boxSize={logoBoxSize}
               border="1px solid white"
               borderRadius="full"
               objectFit="contain"
@@ -100,26 +101,25 @@ export const Navbar = () => {
           </RouterLink>
         </Flex>
 
-      
         <Flex align="center" justify="flex-end" flex={{ base: 1, md: 'auto' }}>
           {!isMobile && currentUser && (
-            <Text color="white" mr={useBreakpointValue({ base: 2, md: 4 })} fontSize={useBreakpointValue({ base: "xs", md: "sm" })}>
+            <Text color="white" mr={marginRight} fontSize={fontSize}>
               Bienvenido, {currentUser.displayName || currentUser.email}
             </Text>
           )}
           {currentUser ? (
-            <Button colorScheme="pink" onClick={logout} size={useBreakpointValue({ base: "xs", md: "sm" })} mr={2}>
+            <Button colorScheme="pink" onClick={logout} size={buttonSize} mr={2}>
               Cerrar Sesión
             </Button>
           ) : (
             <HStack spacing={2} mr={2}>
               <RouterLink to="/register">
-                <Button colorScheme="pink" size={useBreakpointValue({ base: "xs", md: "sm" })}>
+                <Button colorScheme="pink" size={buttonSize}>
                   Registrarse
                 </Button>
               </RouterLink>
               <RouterLink to="/login">
-                <Button colorScheme="pink" size={useBreakpointValue({ base: "xs", md: "sm" })}>
+                <Button colorScheme="pink" size={buttonSize}>
                   Iniciar Sesión
                 </Button>
               </RouterLink>
@@ -129,14 +129,13 @@ export const Navbar = () => {
         </Flex>
       </Flex>
 
-      
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="xs">
         <DrawerOverlay />
         <DrawerContent bg="pink.500">
           <DrawerCloseButton color="white" />
           <DrawerHeader color="white">Menú</DrawerHeader>
           <DrawerBody>
-            <VStack align="stretch" spacing={useBreakpointValue({ base: 6, md: 4 })}>
+            <VStack align="stretch" spacing={spacingValue}>
               <NavItems />
               {currentUser && (
                 <Text color="white" fontSize="md">

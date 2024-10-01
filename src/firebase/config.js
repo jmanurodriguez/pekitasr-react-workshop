@@ -1,11 +1,11 @@
-//src/firebase/config.js
+// src/firebase/config.js
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
-  signInWithPopup,
+  signInWithPopup, // Usar signInWithPopup
   signOut,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
@@ -24,7 +24,7 @@ const firebaseConfig = {
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);  // Si necesitas Firestore
+export const db = getFirestore(app);
 
 // Función para registrar un usuario con email y contraseña
 export const registerWithEmailAndPassword = (email, password) => {
@@ -36,10 +36,11 @@ export const signInWithEmail = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password);
 };
 
-// Función para iniciar sesión con Google
+// Función para iniciar sesión con Google usando pop-up
 export const signInWithGoogle = () => {
   const provider = new GoogleAuthProvider();
-  return signInWithPopup(auth, provider);
+  provider.setCustomParameters({ prompt: 'select_account' }); // Opcional: fuerza la selección de cuenta
+  return signInWithPopup(auth, provider); // Usar signInWithPopup
 };
 
 // Función para cerrar sesión

@@ -1,28 +1,29 @@
-//src/context/AuthContext.jsx
-import { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import {
   auth,
   registerWithEmailAndPassword,
   signInWithEmail,
   signInWithGoogle,
   logOut
-} from "../firebase/config";  // Asegúrate de que las funciones estén correctamente importadas
+} from "../firebase/config";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   // Registro con email y contraseña
   const signup = async (email, password) => {
     try {
       const userCredential = await registerWithEmailAndPassword(email, password);
-      setCurrentUser(userCredential.user);  // Guarda el usuario registrado en el estado
+      setCurrentUser(userCredential.user);
       return userCredential.user;
     } catch (error) {
       console.error("Error en registro:", error);
-      throw error;  // Reenvía el error para ser manejado donde se invoque
+      throw error;
     }
   };
 
@@ -30,7 +31,7 @@ export const AuthProvider = ({ children }) => {
   const loginWithEmail = async (email, password) => {
     try {
       const userCredential = await signInWithEmail(email, password);
-      setCurrentUser(userCredential.user);  // Guarda el usuario autenticado
+      setCurrentUser(userCredential.user);
       return userCredential.user;
     } catch (error) {
       console.error("Error en inicio de sesión con email:", error);
@@ -38,32 +39,45 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Iniciar sesión con Google
+  // Iniciar sesión con Google usando pop-up
   const loginWithGoogle = async () => {
     try {
-      const userCredential = await signInWithGoogle();
-      setCurrentUser(userCredential.user);  // Guarda el usuario autenticado
-      return userCredential.user;
+      const result = await signInWithGoogle();
+      setCurrentUser(result.user);
+      navigate('/'); // Redirigir después de una autenticación exitosa
     } catch (error) {
-      console.error("Error en inicio de sesión con Google:", error);
+      console.error("Error al iniciar sesión con Google:", error);
       throw error;
     }
   };
 
   // Cerrar sesión
   const logout = async () => {
-    await logOut();
-    setCurrentUser(null);
+    try {
+      await logOut();
+      setCurrentUser(null);
+      navigate('/login'); // Redirigir al login después de cerrar sesión
+    } catch (error) {
+      console.error("Error al cerrar sesión:", error);
+    }
   };
 
   // Vigilar cambios en el usuario autenticado
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
-      setLoading(false);
+      setLoading(false); // Cambiar a false una vez que se ha verificado el usuario
     });
+
     return unsubscribe;
   }, []);
+
+  // Solo redirigir si hay un usuario autenticado
+  useEffect(() => {
+    if (currentUser) {
+      console.log("Usuario autenticado, no redirigir automáticamente");
+    }
+  }, [currentUser]);
 
   const value = {
     currentUser,
@@ -73,9 +87,13 @@ export const AuthProvider = ({ children }) => {
     logout,
   };
 
+  if (loading) {
+    return null; // O un loader mientras se verifica el estado del usuario
+  }
+
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {children}
     </AuthContext.Provider>
   );
 };

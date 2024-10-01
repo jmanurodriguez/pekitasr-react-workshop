@@ -1,4 +1,3 @@
-// src/context/CartContext.jsx
 import { createContext, useReducer } from 'react';
 
 // Crear el contexto del carrito

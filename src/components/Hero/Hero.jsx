@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.jsx
 import {
   Container,
   Stack,
@@ -9,12 +8,17 @@ import {
   Button,
   Image,
   Icon,
-  IconButton,
-  createIcon,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';  // Importar useNavigate
 
 export const Hero = () => {
+  const navigate = useNavigate();  // Definir el hook useNavigate
+
+  const handleDiscoverMore = () => {
+    navigate('/upcoming-products');  // Redirigir a la página de próximos productos
+  };
+
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -63,6 +67,7 @@ export const Hero = () => {
               colorScheme={'pink'}
               bg={'pink.400'}
               _hover={{ bg: 'pink.500' }}
+              onClick={handleDiscoverMore}  // Añadir evento onClick para redirigir
             >
               Descubre Más
             </Button>

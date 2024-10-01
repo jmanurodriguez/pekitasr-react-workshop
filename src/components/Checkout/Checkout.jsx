@@ -1,3 +1,4 @@
+//src/components/Checkout/Checkout.jsx
 import { useContext } from "react";
 import { Box, Text, Button, VStack, HStack, Spacer, Heading, useToast, Stack, Container, SimpleGrid, Divider } from "@chakra-ui/react";
 import { CartContext } from "../../context/CartContext";
