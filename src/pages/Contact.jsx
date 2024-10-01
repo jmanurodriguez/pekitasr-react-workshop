@@ -1,14 +1,18 @@
 import {
-  Container,
   Box,
   Heading,
+  Image,
   Text,
+  Divider,
+  HStack,
+  Tag,
+  Container,
+  VStack,
   FormControl,
   FormLabel,
   Input,
   Textarea,
   Button,
-  VStack,
   InputGroup,
   InputLeftElement,
   useToast,
@@ -16,7 +20,6 @@ import {
   Avatar,
   Stack,
   useColorModeValue,
-  Image,
 } from "@chakra-ui/react";
 import { MdOutlineEmail, MdWhatsapp } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
@@ -24,20 +27,19 @@ import { FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
+import { Banner } from "../components/Banner";  
 
-// Componente para mostrar la información de contacto
 const ContactInfo = () => {
   return (
     <Flex justify="center" mb={10}>
       <Box
-        maxW={'500px'}  // Tamaño más grande para la tarjeta
+        maxW={'500px'}
         w={'full'}
         bg={useColorModeValue('white', 'gray.800')}
         boxShadow={'2xl'}
         rounded={'md'}
         overflow={'hidden'}
       >
-        {/* Logo con más espacio alrededor */}
         <Box h={'200px'} w={'full'} bg="pink.500" position="relative">
           <Image
             src={'https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp'}
@@ -50,7 +52,7 @@ const ContactInfo = () => {
             left="50%"
             transform="translate(-50%, -50%)"
             objectFit="contain"
-            filter="brightness(0) invert(1)" // Ajuste similar al de AboutUs
+            filter="brightness(0) invert(1)"
           />
         </Box>
 
@@ -156,96 +158,100 @@ export const Contact = () => {
   };
 
   return (
-    <Container maxW="container.md" mt={10} mb={20}>
-      {/* Componente de Información de Contacto */}
-      <ContactInfo />
+    <>
+      {/* Incluye el banner si lo tienes */}
+      <Banner />
 
-      <Box p={8} shadow="md" borderWidth="1px" borderRadius="lg" bg="white">
-        <Heading as="h2" size="xl" mb={6} textAlign="center" color="pink.500">
-          Escríbenos para un cambio natural con Pekitas Ecotienda
-        </Heading>
+      <Container maxW="container.md" mt={10} mb={20}>
+        <ContactInfo />
 
-        <Text mb={6} fontSize="lg" color="gray.600" textAlign="center">
-          Completa el formulario y nos pondremos en contacto contigo lo antes
-          posible.
-        </Text>
+        <Box p={8} shadow="md" borderWidth="1px" borderRadius="lg" bg="white">
+          <Heading as="h2" size="xl" mb={6} textAlign="center" color="pink.500">
+            Escríbenos para un cambio natural con Pekitas Ecotienda
+          </Heading>
 
-        <form onSubmit={handleSubmit}>
-          <VStack spacing={6} align="stretch">
-            <FormControl id="nombre" isRequired>
-              <FormLabel>Nombre</FormLabel>
-              <InputGroup borderColor="gray.300">
-                <InputLeftElement pointerEvents="none">
-                  <BsPerson color="gray.500" />
-                </InputLeftElement>
-                <Input
-                  type="text"
-                  placeholder="Tu nombre"
+          <Text mb={6} fontSize="lg" color="gray.600" textAlign="center">
+            Completa el formulario y nos pondremos en contacto contigo lo antes
+            posible.
+          </Text>
+
+          <form onSubmit={handleSubmit}>
+            <VStack spacing={6} align="stretch">
+              <FormControl id="nombre" isRequired>
+                <FormLabel>Nombre</FormLabel>
+                <InputGroup borderColor="gray.300">
+                  <InputLeftElement pointerEvents="none">
+                    <BsPerson color="gray.500" />
+                  </InputLeftElement>
+                  <Input
+                    type="text"
+                    placeholder="Tu nombre"
+                    focusBorderColor="pink.400"
+                    value={formData.nombre}
+                    onChange={handleInputChange}
+                  />
+                </InputGroup>
+              </FormControl>
+
+              <FormControl id="email" isRequired>
+                <FormLabel>Email</FormLabel>
+                <InputGroup borderColor="gray.300">
+                  <InputLeftElement pointerEvents="none">
+                    <MdOutlineEmail color="gray.500" />
+                  </InputLeftElement>
+                  <Input
+                    type="email"
+                    placeholder="Tu email"
+                    focusBorderColor="pink.400"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                  />
+                </InputGroup>
+              </FormControl>
+
+              <FormControl id="whatsapp">
+                <FormLabel>Número de WhatsApp</FormLabel>
+                <InputGroup borderColor="gray.300">
+                  <InputLeftElement pointerEvents="none">
+                    <MdWhatsapp color="green" />
+                  </InputLeftElement>
+                  <Input
+                    type="tel"
+                    placeholder="Ej: +54 9 11 1234 5678"
+                    focusBorderColor="pink.400"
+                    value={formData.whatsapp}
+                    onChange={handleInputChange}
+                  />
+                </InputGroup>
+              </FormControl>
+
+              <FormControl id="mensaje" isRequired>
+                <FormLabel>Mensaje</FormLabel>
+                <Textarea
+                  placeholder="Escribe tu mensaje aquí..."
                   focusBorderColor="pink.400"
-                  value={formData.nombre}
+                  borderColor="gray.300"
+                  size="md"
+                  resize="vertical"
+                  value={formData.mensaje}
                   onChange={handleInputChange}
                 />
-              </InputGroup>
-            </FormControl>
+              </FormControl>
 
-            <FormControl id="email" isRequired>
-              <FormLabel>Email</FormLabel>
-              <InputGroup borderColor="gray.300">
-                <InputLeftElement pointerEvents="none">
-                  <MdOutlineEmail color="gray.500" />
-                </InputLeftElement>
-                <Input
-                  type="email"
-                  placeholder="Tu email"
-                  focusBorderColor="pink.400"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                />
-              </InputGroup>
-            </FormControl>
-
-            <FormControl id="whatsapp">
-              <FormLabel>Número de WhatsApp</FormLabel>
-              <InputGroup borderColor="gray.300">
-                <InputLeftElement pointerEvents="none">
-                  <MdWhatsapp color="green" />
-                </InputLeftElement>
-                <Input
-                  type="tel"
-                  placeholder="Ej: +54 9 11 1234 5678"
-                  focusBorderColor="pink.400"
-                  value={formData.whatsapp}
-                  onChange={handleInputChange}
-                />
-              </InputGroup>
-            </FormControl>
-
-            <FormControl id="mensaje" isRequired>
-              <FormLabel>Mensaje</FormLabel>
-              <Textarea
-                placeholder="Escribe tu mensaje aquí..."
-                focusBorderColor="pink.400"
-                borderColor="gray.300"
-                size="md"
-                resize="vertical"
-                value={formData.mensaje}
-                onChange={handleInputChange}
-              />
-            </FormControl>
-
-            <Button
-              colorScheme="pink"
-              size="lg"
-              width="full"
-              mt={4}
-              type="submit"
-              isLoading={isLoading}
-            >
-              Enviar
-            </Button>
-          </VStack>
-        </form>
-      </Box>
-    </Container>
+              <Button
+                colorScheme="pink"
+                size="lg"
+                width="full"
+                mt={4}
+                type="submit"
+                isLoading={isLoading}
+              >
+                Enviar
+              </Button>
+            </VStack>
+          </form>
+        </Box>
+      </Container>
+    </>
   );
 };

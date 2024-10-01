@@ -9,111 +9,122 @@ import {
   Image,
   Icon,
   useColorModeValue,
-} from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';  // Importar useNavigate
+} from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom"; // Importar useNavigate
 
 export const Hero = () => {
-  const navigate = useNavigate();  // Definir el hook useNavigate
+  const navigate = useNavigate(); // Definir el hook useNavigate
 
   const handleDiscoverMore = () => {
-    navigate('/upcoming-products');  // Redirigir a la página de próximos productos
+    navigate("/upcoming-products"); // Redirigir a la página de próximos productos
+  };
+
+  const handleHowToBuy = () => {
+    navigate("/how-to-buy"); // Redirigir a la página de cómo comprar
   };
 
   return (
-    <Container maxW={'7xl'}>
+    <Container maxW={"7xl"}>
       <Stack
-        align={'center'}
+        align={"center"}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 16, md: 24 }}
-        direction={{ base: 'column', md: 'row' }}
-        textAlign={{ base: 'center', md: 'left' }}  // Centrado en móvil, alineado a la izquierda en pantallas más grandes
+        direction={{ base: "column", md: "row" }}
+        textAlign={{ base: "center", md: "left" }} // Centrado en móvil, alineado a la izquierda en pantallas más grandes
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
             <Text
-              as={'span'}
-              position={'relative'}
+              as={"span"}
+              position={"relative"}
               _after={{
                 content: "''",
-                width: 'full',
-                height: '30%',
-                position: 'absolute',
+                width: "full",
+                height: "30%",
+                position: "absolute",
                 bottom: 1,
                 left: 0,
-                bg: 'pink.400',
+                bg: "pink.400",
                 zIndex: -1,
               }}
             >
               ¡Explora Pekitas Ecotienda!
             </Text>
             <br />
-            <Text as={'span'} color={'pink.400'}>
+            <Text as={"span"} color={"pink.400"}>
               Productos eco-amigables para todos
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-            Pekitas Ecotienda es tu destino para productos sostenibles y amigables con el medio ambiente. Desde cosméticos naturales hasta productos biodegradables, encuentra todo lo que necesitas para cuidar de ti y del planeta.
+          <Text color={"gray.500"}>
+            Pekitas Ecotienda es tu destino para productos sostenibles y
+            amigables con el medio ambiente. Desde cosméticos naturales hasta
+            productos biodegradables, encuentra todo lo que necesitas para
+            cuidar de ti y del planeta.
           </Text>
-          <Stack spacing={{ base: 4, sm: 6 }} direction={{ base: 'column', sm: 'row' }}>
+          <Stack
+            spacing={{ base: 4, sm: 6 }}
+            direction={{ base: "column", sm: "row" }}
+          >
             <Button
-              rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
+              rounded={"full"}
+              size={"lg"}
+              fontWeight={"normal"}
               px={6}
-              colorScheme={'pink'}
-              bg={'pink.400'}
-              _hover={{ bg: 'pink.500' }}
-              onClick={handleDiscoverMore}  // Añadir evento onClick para redirigir
+              colorScheme={"pink"}
+              bg={"pink.400"}
+              _hover={{ bg: "pink.500" }}
+              onClick={handleDiscoverMore} // Añadir evento onClick para redirigir
             >
               Descubre Más
             </Button>
             <Button
-              rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
+              rounded={"full"}
+              size={"lg"}
+              fontWeight={"normal"}
               px={6}
-              bg={'gray.300'}
-              _hover={{ bg: 'gray.400' }}
+              bg={"gray.300"}
+              _hover={{ bg: "gray.400" }}
+              onClick={handleHowToBuy} // Añadir el evento onClick para redirigir a "Cómo comprar"
             >
-              ¿Cómo Funciona?
+              ¿Cómo comprar?
             </Button>
           </Stack>
         </Stack>
         <Flex
           flex={1}
-          justify={'center'}
-          align={'center'}
-          position={'relative'}
-          w={'full'}
+          justify={"center"}
+          align={"center"}
+          position={"relative"}
+          w={"full"}
         >
           <Blob
-            w={'150%'}
-            h={'150%'}
-            position={'absolute'}
-            top={'-20%'}
+            w={"150%"}
+            h={"150%"}
+            position={"absolute"}
+            top={"-20%"}
             left={0}
             zIndex={-1}
-            color={useColorModeValue('pink.50', 'pink.400')}
+            color={useColorModeValue("pink.50", "pink.400")}
           />
           <Box
-            position={'relative'}
-            height={{ base: '250px', sm: '300px', md: '400px' }}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+            position={"relative"}
+            height={{ base: "250px", sm: "300px", md: "400px" }}
+            rounded={"2xl"}
+            boxShadow={"2xl"}
+            width={"full"}
+            overflow={"hidden"}
           >
             <Image
-              alt={'Hero Image'}
-              fit={'cover'}
-              align={'center'}
-              w={'100%'}
-              h={'100%'}
-              src={'https://i.ibb.co/SvzmqmF/sales-31-11zon.webp'}
+              alt={"Hero Image"}
+              fit={"cover"}
+              align={"center"}
+              w={"100%"}
+              h={"100%"}
+              src={"https://i.ibb.co/SvzmqmF/sales-31-11zon.webp"}
             />
           </Box>
         </Flex>
@@ -125,7 +136,7 @@ export const Hero = () => {
 const Blob = (props) => {
   return (
     <Icon
-      width={'100%'}
+      width={"100%"}
       viewBox="0 0 578 440"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

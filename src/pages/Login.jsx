@@ -17,6 +17,7 @@ import {
   import { useAuth } from '../context/AuthContext';
   import { useNavigate } from 'react-router-dom';
   
+  
   export const Login = () => {
     const [formData, setFormData] = useState({ email: '', password: '' });
     const [loading, setLoading] = useState(false);
@@ -58,6 +59,7 @@ import {
     };
   
     return (
+        
         <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
             <Flex p={8} flex={1} align={'center'} justify={'center'}>
                 <Stack spacing={4} w={'full'} maxW={'md'}>

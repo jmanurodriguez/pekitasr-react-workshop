@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { Hero } from "../components/Hero/Hero";
 import { Banner } from "../components/Banner";
-import { ProductCarousel } from "../components/ProductCarousel/ProductCarousel"; // Asegúrate de que la ruta sea correcta
+import { ProductCarousel } from "../components/ProductCarousel/ProductCarousel"; 
 
 export const Home = () => {
   const { products, loading } = useProducts();
