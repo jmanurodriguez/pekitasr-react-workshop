@@ -75,7 +75,7 @@ export const Hero = () => {
               fontWeight={"normal"}
               px={6}
               colorScheme={"pink"}
-              bg={"pink.400"}
+              bgGradient='linear(to-br, pink.400, pink.900)'
               _hover={{ bg: "pink.500" }}
               onClick={handleDiscoverMore} 
             >
@@ -86,7 +86,7 @@ export const Hero = () => {
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              bg={"gray.300"}
+              bgGradient='linear(to-br, gray.200, pink.500)'
               _hover={{ bg: "gray.400" }}
               onClick={handleHowToBuy} 
             >

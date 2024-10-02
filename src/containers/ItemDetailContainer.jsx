@@ -1,4 +1,3 @@
-// src/containers/ItemDetailContainer.jsx
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Heading, Image, Text } from '@chakra-ui/react';

@@ -1,4 +1,3 @@
-// src/components/HomeUI.jsx
 import {
     Text, Spinner, Center, Box, Flex, Image, Heading, Divider, HStack, useColorModeValue
   } from '@chakra-ui/react';

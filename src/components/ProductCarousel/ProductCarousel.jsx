@@ -1,4 +1,3 @@
-//src/components/ProductCarousel/ProductCarousel.jsx
 import React from 'react';
 import {
   Box,

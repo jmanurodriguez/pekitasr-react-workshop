@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import {
   Box,
   Container,
@@ -16,7 +16,7 @@ import {
   ListItem,
   useColorModeValue,
 } from '@chakra-ui/react';
-import Swal from 'sweetalert2'; 
+import Swal from 'sweetalert2';
 import { CartContext } from '../context/CartContext';
 import productosData from '../data/productos.json';
 
@@ -24,6 +24,7 @@ export default function ItemDetail() {
   const { itemId } = useParams();
   const { addItem } = useContext(CartContext);
   const [qty, setQty] = useState(1);
+  const navigate = useNavigate(); 
 
   const product = productosData.find((p) => p.id === itemId);
 
@@ -45,7 +46,7 @@ export default function ItemDetail() {
         text: `${product.nombre} ha sido agregado al carrito.`,
         imageUrl: product.imagen,
         imageWidth: imageSize,
-        imageHeight: imageSize * (200 / 400), 
+        imageHeight: imageSize * (200 / 400),
         imageAlt: product.nombre,
         icon: 'success',
         timer: 2000,
@@ -64,6 +65,10 @@ export default function ItemDetail() {
     if (qty > 1) {
       setQty(qty - 1);
     }
+  };
+
+  const handleVolverAProductos = () => {
+    navigate('/#productos'); 
   };
 
   if (!product) {
@@ -110,7 +115,9 @@ export default function ItemDetail() {
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={'column'}
-            divider={<StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />}
+            divider={
+              <StackDivider borderColor={useColorModeValue('gray.200', 'gray.600')} />
+            }
           >
             <VStack spacing={{ base: 4, sm: 6 }}>
               <Text
@@ -140,7 +147,6 @@ export default function ItemDetail() {
                   </Text>{' '}
                   {product.stock}
                 </ListItem>
-                
               </List>
             </Box>
           </Stack>
@@ -171,6 +177,27 @@ export default function ItemDetail() {
             onClick={handleAddToCart}
           >
             Agregar al carrito
+          </Button>
+
+          
+          <Button
+            rounded={'none'}
+            w={'full'}
+            mt={4} 
+            size={'lg'}
+            py={'7'}
+            bgGradient='linear(to-br, pink.400, pink.900)'
+            color={useColorModeValue('white', 'gray.900')}
+            textTransform={'uppercase'}
+            _hover={{
+              transform: 'translateY(2px)',
+              boxShadow: 'lg',
+              bg: useColorModeValue('pink.500', 'gray.100'),
+            }}
+            onClick={handleVolverAProductos}
+            
+          >
+            Volver a Productos
           </Button>
         </Stack>
       </SimpleGrid>

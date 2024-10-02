@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import {
     Button,
     Checkbox,
@@ -97,6 +96,7 @@ import {
                             <Button
                                 type="submit"
                                 colorScheme={'pink'}
+                                bgGradient='linear(to-br, pink.400, pink.900)'
                                 variant={'solid'}
                                 isLoading={loading}
                             >

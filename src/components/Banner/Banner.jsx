@@ -1,4 +1,4 @@
-// src/components/Banner/Banner.jsx
+
 import { Box, Image } from "@chakra-ui/react";
 
 export const Banner = () => {

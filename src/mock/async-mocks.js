@@ -1,5 +1,3 @@
-// src/mock/async-mocks.js
-
 import productosData from '../data/productos.json';
 
 

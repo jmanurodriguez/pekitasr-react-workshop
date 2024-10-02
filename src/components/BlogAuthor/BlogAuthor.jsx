@@ -1,4 +1,3 @@
-// src/components/BlogAuthor.jsx
 import { memo } from 'react';
 import { HStack, Image, Text } from '@chakra-ui/react';
 

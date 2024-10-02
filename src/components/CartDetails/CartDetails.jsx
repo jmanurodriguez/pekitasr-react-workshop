@@ -1,4 +1,3 @@
-// src/components/CartDetails/CartDetails.jsx
 import { useContext } from "react";
 import {
   Box,

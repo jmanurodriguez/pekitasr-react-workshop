@@ -45,14 +45,14 @@ export const UpcomingProducts = () => {
           Próximos Productos
         </Heading>
 
-        {/* Primer Producto */}
+     
         <Flex
           direction={{ base: 'column', md: 'row' }}
           alignItems="center"
-          mb={20} // Aumentamos el margen inferior
+          mb={20} 
         >
-          {/* Imagen a la izquierda */}
-          <Box flex="1" mr={{ base: 0, md: 10 }} mb={{ base: 6, md: 0 }}> {/* Aumentamos mr en md */}
+          
+          <Box flex="1" mr={{ base: 0, md: 10 }} mb={{ base: 6, md: 0 }}> 
             <Image
               borderRadius="lg"
               src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727786226/101c6f1a-fcab-46c7-a2e3-de4d6032da50_gr6zmf.jpg"
@@ -66,7 +66,7 @@ export const UpcomingProducts = () => {
             />
           </Box>
 
-          {/* Detalles del producto */}
+          
           <Box flex="1">
             <BlogTags tags={['Próximamente', 'Nuevo']} />
             <Heading marginTop="1" color="pink.400">
@@ -85,13 +85,13 @@ export const UpcomingProducts = () => {
           </Box>
         </Flex>
 
-        {/* Segundo Producto */}
+      
         <Flex
           direction={{ base: 'column', md: 'row' }}
           alignItems="center"
-          mb={50} // Aumentamos el margen inferior
+          mb={50} 
         >
-          {/* Detalles del producto */}
+          
           <Box flex="1" order={{ base: 2, md: 1 }}>
             <Heading marginTop="1" color="pink.400">
               Hidratante Natural
@@ -108,7 +108,7 @@ export const UpcomingProducts = () => {
             <BlogAuthor date={new Date()} />
           </Box>
 
-          {/* Imagen a la derecha */}
+          
           <Box
             flex="1"
             ml={{ base: 0, md: 10 }} 
@@ -129,24 +129,24 @@ export const UpcomingProducts = () => {
           </Box>
         </Flex>
 
-        {/* Divisor con ícono */}
+       
         <Flex justifyContent="center" alignItems="center" my={20}> 
           <Divider borderColor="pink.500" width="40%" />
           <Icon as={FaLeaf} color="pink.500" mx={2} boxSize={8} />
           <Divider borderColor="pink.500" width="40%" />
         </Flex>
 
-        {/* Tercer Producto */}
+     
         <Flex
           direction={{ base: 'column', md: 'row' }}
           alignItems="center"
-          mb={20} // Aumentamos el margen inferior
+          mb={20} 
         >
-          {/* Imagen a la izquierda */}
+          
           <Box flex="1" mr={{ base: 0, md: 10 }} mb={{ base: 6, md: 0 }}> 
             <Image
               borderRadius="lg"
-              src="https://res-console.cloudinary.com/dpcpcnqmq/thumbnails/v1/image/upload/v1727830306/dXJ1Y3VtX3Fva3k3Yg==/drilldown" 
+              src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830306/urucum_qoky7b.jpg" 
               alt="Oleo Urucum"
               objectFit="cover"
               w="100%"

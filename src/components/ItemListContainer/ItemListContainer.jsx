@@ -1,4 +1,4 @@
-// src/components/ItemListContainer/ItemListContainer.jsx
+
 import { useState } from "react";
 import { Box, SimpleGrid, Button, HStack, Spinner, Text } from "@chakra-ui/react";
 import { Item } from "../Item/Item";

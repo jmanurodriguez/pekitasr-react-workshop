@@ -1,4 +1,3 @@
-// src/pages/Category.jsx
 import { useParams } from "react-router-dom";
 import { ItemListContainer } from "../components";
 import { useProductsByCategory } from "../hooks/useProductsByCategory";

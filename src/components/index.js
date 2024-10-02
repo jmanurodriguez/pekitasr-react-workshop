@@ -1,4 +1,3 @@
-// src/components/index.js
 export * from './Navbar';
 export * from './Item';
 export * from './CartWidget';

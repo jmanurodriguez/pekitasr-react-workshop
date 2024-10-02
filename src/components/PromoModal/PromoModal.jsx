@@ -1,4 +1,3 @@
-//src/components/PromoModal/PromoModal.jsx
 import React, { useEffect } from "react";
 import {
   Modal,

@@ -1,4 +1,4 @@
-//src/pages/Register.jsx
+
 import { useState } from 'react';
 import {
   Progress,

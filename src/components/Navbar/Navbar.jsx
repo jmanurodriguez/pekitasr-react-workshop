@@ -37,7 +37,7 @@ export const Navbar = () => {
   const logoBoxSize = useBreakpointValue({ base: "50px", sm: "60px", md: "70px" });
   const buttonSize = useBreakpointValue({ base: "xs", md: "sm" });
 
-  // Estado para controlar la visibilidad de las categorías en el menú móvil
+ 
   const [showCategories, setShowCategories] = useState(false);
 
   const handleCategoryClick = (category) => {
@@ -64,7 +64,7 @@ export const Navbar = () => {
         Sobre Nosotros
       </NavItem>
 
-      {/* Menú de Productos con categorías */}
+      
       <Menu>
         <MenuButton
           as={Button}
@@ -113,7 +113,7 @@ export const Navbar = () => {
         flexWrap="wrap"
         width="100%"
       >
-        {/* Menú para pantallas grandes */}
+     
         <Flex align="center" flex={{ base: 1, md: 'auto' }}>
           <IconButton
             display={{ base: "flex", md: "none" }}
@@ -130,7 +130,7 @@ export const Navbar = () => {
           </HStack>
         </Flex>
 
-        {/* Logo */}
+        
         <Flex justify="center" flex={{ base: 1, md: 1 }} px={2}>
           <RouterLink to="/">
             <Image
@@ -146,7 +146,7 @@ export const Navbar = () => {
           </RouterLink>
         </Flex>
 
-        {/* Usuario y carrito */}
+      
         <Flex align="center" justify="flex-end" flex={{ base: 1, md: 'auto' }}>
           {!isMobile && currentUser && (
             <Text color="white" mr={4} fontSize="sm">
@@ -175,7 +175,7 @@ export const Navbar = () => {
         </Flex>
       </Flex>
 
-      {/* Drawer para el menú móvil */}
+      
       <Drawer isOpen={isOpen} placement="left" onClose={onClose} size="xs">
         <DrawerOverlay />
         <DrawerContent bg="pink.500">
@@ -187,7 +187,7 @@ export const Navbar = () => {
                 Sobre Nosotros
               </NavItem>
 
-              {/* Menú de Productos con categorías en el Drawer */}
+            
               <Box>
                 <Button
                   variant="ghost"

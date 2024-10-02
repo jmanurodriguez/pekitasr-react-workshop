@@ -28,6 +28,10 @@ import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/config";
 import { Banner } from "../components/Banner";  
+import { RiContactsLine } from "react-icons/ri";
+import { GrContact } from "react-icons/gr";
+
+
 
 const ContactInfo = () => {
   return (
@@ -240,6 +244,7 @@ export const Contact = () => {
 
               <Button
                 colorScheme="pink"
+                bgGradient='linear(to-br, pink.400, pink.900)'
                 size="lg"
                 width="full"
                 mt={4}

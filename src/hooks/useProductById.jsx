@@ -1,4 +1,3 @@
-//src/hooks/useProductById.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Box, Image, Text, Button, Heading, VStack, Stack } from "@chakra-ui/react";

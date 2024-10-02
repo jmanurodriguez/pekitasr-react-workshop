@@ -12,6 +12,10 @@ import {
     Icon,
   } from '@chakra-ui/react';
   import { FaLeaf } from 'react-icons/fa';
+  import { MdOutlineCrueltyFree } from 'react-icons/md';
+  import { LuVegan } from "react-icons/lu";
+
+
   import { Banner } from "../components/Banner"; 
   
   const BlogTags = ({ tags, marginTop }) => {
@@ -103,7 +107,7 @@ import {
               <BlogTags tags={['Eco-friendly', 'Sostenible']} />
               <Heading marginTop="1" color="pink.500">
                 <Text textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                  Productos eco-amigables
+                  Nuestra historia
                 </Text>
               </Heading>
               <Text
@@ -112,7 +116,7 @@ import {
                 color={useColorModeValue('gray.700', 'gray.200')}
                 fontSize="lg"
               >
-                En Pekitas Ecotienda, nuestra misión es ofrecer productos sostenibles que cuiden del planeta y de ti. Nos especializamos en productos eco-amigables, hechos con materiales responsables y amigables con el medio ambiente.
+                Pekitas Ecotienda es más que una simple tienda, es una visión y un compromiso con el futuro de nuestro planeta. Fundada por la emprendedora y especialista en artes visuales, Gabriela Rodríguez, Pekitas Ecotienda es el resultado de una pasión por la belleza natural y un profundo respeto por el medio ambiente. Gabriela, con su amplio conocimiento y experiencia en las artes visuales, ha creado una gama de productos que no solo son estéticamente agradables, sino también amigables con el medio ambiente. Cada producto en Pekitas Ecotienda es natural, sostenible y biodegradable y veganos, lo que significa que no solo es bueno para ti, sino también para nuestro planeta.
               </Text>
               <BlogAuthor name="Pekitas Team" date={new Date()} />
             </Box>
@@ -122,6 +126,8 @@ import {
           <Flex justifyContent="center" alignItems="center" my={10}>
             <Divider borderColor="pink.500" width="40%" />
             <Icon as={FaLeaf} color="pink.500" mx={2} boxSize={8} />
+            <Icon as={MdOutlineCrueltyFree} color="pink.500" mx={2} boxSize={8} />
+            <Icon as={LuVegan} color="pink.500" mx={2} boxSize={8} />
             <Divider borderColor="pink.500" width="40%" />
           </Flex>
     
@@ -158,7 +164,7 @@ import {
                 </Text>
               </Heading>
               <Text as="p" fontSize="lg" marginTop="2" color="gray.700">
-                Nuestro compromiso es reducir la huella ambiental ofreciendo productos que respetan la naturaleza. Desde empaques biodegradables hasta cosméticos naturales, buscamos el equilibrio entre calidad y responsabilidad.
+                Nuestro compromiso es reducir la huella ambiental ofreciendo productos que respetan la naturaleza. Desde empaques biodegradables hasta cosméticos naturales, buscamos el equilibrio entre calidad y responsabilidad.En Pekitas Ecotienda, creemos que cada pequeña elección que hacemos puede tener un gran impacto en el mundo que nos rodea. Por eso, nos esforzamos por ofrecer productos que te ayuden a vivir de una manera más sostenible y consciente. Desde cosméticos hasta productos de cuidado personal, cada artículo en nuestra tienda ha sido cuidadosamente seleccionado y creado con el objetivo de reducir nuestro impacto en el medio ambiente
               </Text>
               <BlogAuthor name="Pekitas Team" date={new Date()} />
             </Box>
