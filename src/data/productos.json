@@ -4,7 +4,10 @@
     "nombre": "Desodorante Solido",
     "precio": 4000,
     "imagen": "https://i.ibb.co/CsM13Wr/desodorante-solido-16-11zon.webp",
-    "categorias": ["higiene", "cuidado-personal"],
+    "categorias": [
+      "higiene",
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Desodorante sólido natural, libre de aluminio y parabenos. Ideal para el cuidado diario sin comprometer tu salud ni el medio ambiente."
   },
@@ -13,7 +16,9 @@
     "nombre": "Balsamo Labial",
     "precio": 3000,
     "imagen": "https://i.ibb.co/82nTTrR/balsamo-labial.jpg",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Bálsamo labial hidratante hecho con ingredientes naturales. Mantén tus labios suaves y protegidos todo el día."
   },
@@ -22,7 +27,9 @@
     "nombre": "Serúm Capilar",
     "precio": 3800,
     "imagen": "https://i.ibb.co/NNCNjyM/nosotros2-25-11zon.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Serúm capilar reparador que fortalece y nutre el cabello desde la raíz. Ideal para un acabado brillante y saludable."
   },
@@ -31,7 +38,9 @@
     "nombre": "Cepillo de Dientes",
     "precio": 3700,
     "imagen": "https://i.ibb.co/41v2mwV/sepillo-32-11zon.webp",
-    "categorias": ["higiene"],
+    "categorias": [
+      "higiene"
+    ],
     "stock": 10,
     "descripcion": "Cepillo de dientes ecológico de bambú. Limpieza profunda con cerdas suaves que cuidan tus encías y el medio ambiente."
   },
@@ -40,7 +49,9 @@
     "nombre": "Home Spray Sandía",
     "precio": 4000,
     "imagen": "https://i.ibb.co/S6MPbZ9/index-1-17-11zon.webp",
-    "categorias": ["eco-friendly"],
+    "categorias": [
+      "eco-friendly"
+    ],
     "stock": 10,
     "descripcion": "Spray aromatizante para el hogar con fragancia de sandía. Refresca cualquier espacio con un toque natural y revitalizante."
   },
@@ -49,7 +60,9 @@
     "nombre": "Mouse Corporal",
     "precio": 4500,
     "imagen": "https://i.ibb.co/17dCPZc/mouse-corporal-23-11zon.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Mousse corporal hidratante y ligero, ideal para mantener la piel suave y tersa durante todo el día. Apto para todo tipo de piel."
   },
@@ -58,7 +71,10 @@
     "nombre": "Detergente Solido",
     "precio": 5000,
     "imagen": "https://i.ibb.co/87wkhSM/detergente-solido.webp",
-    "categorias": ["higiene", "eco-friendly"],
+    "categorias": [
+      "higiene",
+      "eco-friendly"
+    ],
     "stock": 10,
     "descripcion": "Detergente sólido biodegradable, eficaz para la limpieza de tu ropa sin generar residuos plásticos. Amigable con el medio ambiente."
   },
@@ -67,7 +83,9 @@
     "nombre": "Tonico Facial",
     "precio": 5200,
     "imagen": "https://i.ibb.co/whBjt5H/index-4-20-11zon.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Tónico facial refrescante con ingredientes naturales que purifican y equilibran la piel, brindando una sensación de frescura."
   },
@@ -76,7 +94,9 @@
     "nombre": "Jabón Natural",
     "precio": 5500,
     "imagen": "https://i.ibb.co/t48y7GF/jabon-natural1-21-11zon.webp",
-    "categorias": ["higiene"],
+    "categorias": [
+      "higiene"
+    ],
     "stock": 10,
     "descripcion": "Jabón natural hecho a mano, ideal para pieles sensibles. Limpieza profunda sin resecar, dejando la piel suave y fresca."
   },
@@ -85,7 +105,9 @@
     "nombre": "Jabón Natural Avena",
     "precio": 5500,
     "imagen": "https://i.ibb.co/wrsVWD0/jabon-natural2-22-11zon.webp",
-    "categorias": ["higiene"],
+    "categorias": [
+      "higiene"
+    ],
     "stock": 10,
     "descripcion": "Jabón natural con avena, perfecto para exfoliar y nutrir la piel. Ideal para una experiencia relajante en cada baño."
   },
@@ -94,7 +116,10 @@
     "nombre": "Sales de Baño",
     "precio": 7000,
     "imagen": "https://i.ibb.co/SvzmqmF/sales-31-11zon.webp",
-    "categorias": ["cuidado-personal", "eco-friendly"],
+    "categorias": [
+      "cuidado-personal",
+      "eco-friendly"
+    ],
     "stock": 10,
     "descripcion": "Sales de baño relajantes con propiedades terapéuticas. Alivia el estrés y revitaliza los sentidos mientras cuida tu piel."
   },
@@ -103,7 +128,9 @@
     "nombre": "Vela Aromatica",
     "precio": 7100,
     "imagen": "https://i.ibb.co/zm0hJGX/index-3-19-11zon.webp",
-    "categorias": ["eco-friendly"],
+    "categorias": [
+      "eco-friendly"
+    ],
     "stock": 10,
     "descripcion": "Vela aromática ecológica, ideal para crear un ambiente cálido y relajante en tu hogar. Hecha con cera natural y fragancias puras."
   },
@@ -112,7 +139,9 @@
     "nombre": "Jabón Batido",
     "precio": 8700,
     "imagen": "https://i.ibb.co/7VjXW7b/batido-10-11zon.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Jabón batido suave y cremoso para una experiencia de limpieza única. Apto para todo tipo de pieles, con aromas delicados."
   },
@@ -121,7 +150,9 @@
     "nombre": "Post Solar",
     "precio": 9200,
     "imagen": "https://i.ibb.co/98JNp9L/post-solar.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Crema post solar hidratante y refrescante, ideal para calmar la piel después de la exposición al sol. Perfecto para todo tipo de piel."
   },
@@ -130,7 +161,9 @@
     "nombre": "Crema Para Peinar de Mango",
     "precio": 10000,
     "imagen": "https://i.ibb.co/hMnP4jD/crema-para-peinar-mango.webp",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Crema para peinar de mango, ideal para nutrir y definir el cabello rizado o seco. Proporciona brillo y control durante todo el día."
   },
@@ -139,20 +172,87 @@
     "nombre": "Balsamo Labial en Lata",
     "precio": 2500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727814281/afbv1gc36qgxdd1vwiml.jpg",
-    "categorias": ["cuidado-personal"],
+    "categorias": [
+      "cuidado-personal"
+    ],
     "stock": 10,
     "descripcion": "Menta y limón: voluminiza, refresca e hidrata (verde). Achiote y coco: tropical, nutre y protege del sol (naranja). Cereza: Diseñado para rejuvenecer tus labios y con un riquísimo aroma a cereza (rojo). Ideal para llevarlo a todos lados, económico, super rendidor, cruelty free, natural y ecológico."
   },
   {
     "id": "017",
     "nombre": "Desodorante Natural en Lata",
-    "precio": 3500,
-    "imagen": "https://res-console.cloudinary.com/dpcpcnqmq/thumbnails/v1/image/upload/v1727814281/ZmZreW11amMyMTF6c3NyYXVlbTU=/drilldown",
-    "categorias": ["higiene", "cuidado-personal"],
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727814281/afbv1gc36qgxdd1vwiml.jpg",
+    "categorias": [
+      "higiene",
+      "cuidado-personal"
+    ],
     "stock": 10,
-    "descripcion": "Menta y limón: voluminiza, refresca e hidrata (verde). Achiote y coco: tropical, nutre y protege del sol (naranja). Cereza: Diseñado para rejuvenecer tus labios y con un riquísimo aroma a cereza (rojo). Ideal para llevarlo a todos lados, económico, super rendidor, cruelty free, natural y ecológico."
+    "descripcion": "Desodorante natural vegano en lata. Contiene:Manteca de karite, aceite de coco, arcilla, caolin, aceite de salvia y lavanda. Viví  una experiencia única,  libre de químicos derivados del petróleo."
+  },
+  {
+    "id": "018",
+    "nombre": "Oleo Rosa de Mosqueta",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/5c03532d-2791-47c6-868d-65a41ba18f76_pltdww.jpg",
+    "categorias": [
+      "oleos-naturales",
+      "cuidado-personal"
+    ],
+    "stock": 10,
+    "descripcion": "Posee omega 3 y omega 6, vitamina A y E. Cicatriza y repara efectivamente la piel y le da elasticidad. Combate el envejecimiento prematuro. Mejora las manchas de la piel."
+  },
+  {
+    "id": "019",
+    "nombre": "Oleo de Jojoba",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/4e14d60f-17ba-48d5-8a57-ffcdefd830e5_tunrnm.jpg",
+    "categorias": [
+      "oleos-naturales",
+      "cuidado-personal"
+    ],
+    "stock": 10,
+    "descripcion": "Aceite de rápida absorción rico en antioxidantes y vitamina E, A y D.Sirve para hidratar y humectar las pieles tanto secas como grasas. Regula la producción de sebo en la piel. Tiene propiedades astringentes y antisépticas, el aliado perfecto para combatir todo tipo de infecciones, como por ejemplo pieles con acné."
+  },
+  {
+    "id": "020",
+    "nombre": "Oleo de Ricino",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/65747d2c-1ac6-45d6-b451-cc7ae471ead6_lp7tgj.jpg",
+    "categorias": [
+      "oleos-naturales",
+      "cuidado-personal"
+    ],
+    "stock": 10,
+    "descripcion": "Fortalecedor de uñas. Incentiva el crecimiento de las pestañas, si masajeas tu cuero cabelludo con este aceite también incentiva el crecimiento del cabello."
+  },
+  {
+    "id": "021",
+    "nombre": "Oleo de Coco",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/63afb673-e0aa-46ea-85d4-926465c2e151_mas5ea.jpg",
+    "categorias": [
+      "oleos-naturales",
+      "cuidado-personal"
+    ],
+    "stock": 10,
+    "descripcion": "Quizás el más hidratante y el que mejor penetra en el cabello. Acondiciona e hidrata el cabello (es ideal para cabellos maltratados y/o teñidos), excelente para prevenir o tratar estrías. \nAl ser antibiótico está en la fórmula de muchos desodorantes."
+  },
+  {
+    "id": "022",
+    "nombre": "Oleo de Almendras",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/a710fb2d-651e-4382-ab81-0a63ab079188_t6aeea.jpg",
+    "categorias": [
+      "oleos-naturales",
+      "cuidado-personal"
+    ],
+    "stock": 10,
+    "descripcion": "Conocido por dejar la piel y el cabello suave y super hidratante. \n Es ideal para aplicar en las puntas del cabello sin sobrecargarlo demasiado. \n Como desmaquillante facial para pieles secas. \n Para realizar masajes. \n Para tratar la costra láctea en los bebes."
   }
 ]
+
+
 
 
 

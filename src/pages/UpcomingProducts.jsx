@@ -6,16 +6,12 @@ import {
   Divider,
   HStack,
   Tag,
-  Wrap,
-  WrapItem,
-  useColorModeValue,
   Container,
-  VStack,
-  Flex, 
-  Icon, 
+  Flex,
+  Icon,
 } from '@chakra-ui/react';
-import { FaLeaf } from 'react-icons/fa'; 
-import { Banner } from "../components/Banner"; 
+import { FaLeaf } from 'react-icons/fa';
+import { Banner } from "../components/Banner";
 
 const BlogTags = ({ tags, marginTop }) => {
   return (
@@ -32,7 +28,9 @@ const BlogTags = ({ tags, marginTop }) => {
 const BlogAuthor = ({ date }) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Text>{new Date(date).toLocaleDateString()}</Text>
+      <Text color="gray.500" fontSize="sm">
+        {new Date(date).toLocaleDateString()}
+      </Text>
     </HStack>
   );
 };
@@ -40,118 +38,143 @@ const BlogAuthor = ({ date }) => {
 export const UpcomingProducts = () => {
   return (
     <Box as="section" w="100%" m="0" p="0">
-      <Banner /> 
+      <Banner />
 
-      <Container maxW={'7xl'} p="12">
-        <Heading as="h1" color="pink.500" textAlign="center">
+      <Container maxW="7xl" p="12">
+        <Heading as="h1" color="pink.500" textAlign="center" mb={10}>
           Próximos Productos
         </Heading>
-        <Box
-          marginTop={{ base: '1', sm: '5' }}
-          display="flex"
-          flexDirection={{ base: 'column', sm: 'row' }}
-          justifyContent="space-between"
+
+        {/* Primer Producto */}
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          alignItems="center"
+          mb={20} // Aumentamos el margen inferior
         >
-          <Box
-            display="flex"
-            flex="1"
-            marginRight="3"
-            position="relative"
-            alignItems="center"
-          >
-            <Box
-              width={{ base: '100%', sm: '85%' }}
-              zIndex="2"
-              marginLeft={{ base: '0', sm: '5%' }}
-              marginTop="5%"
-            >
-              <Box textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                <Image
-                  borderRadius="lg"
-                  src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727786226/101c6f1a-fcab-46c7-a2e3-de4d6032da50_gr6zmf.jpg"
-                  alt="Producto próximo"
-                  objectFit="contain"
-                />
-              </Box>
-            </Box>
-            <Box zIndex="1" width="100%" position="absolute" height="100%">
-              <Box
-                bgGradient={useColorModeValue(
-                  'radial(pink.500 1px, transparent 1px)', 
-                  'radial(pink.300 1px, transparent 1px)',
-                )}
-                backgroundSize="20px 20px"
-                opacity="0.4"
-                height="100%"
-              />
-            </Box>
+          {/* Imagen a la izquierda */}
+          <Box flex="1" mr={{ base: 0, md: 10 }} mb={{ base: 6, md: 0 }}> {/* Aumentamos mr en md */}
+            <Image
+              borderRadius="lg"
+              src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727786226/101c6f1a-fcab-46c7-a2e3-de4d6032da50_gr6zmf.jpg"
+              alt="Producto próximo"
+              objectFit="cover"
+              w="100%"
+              h="100%"
+              maxH="400px"
+              transition="0.3s ease-in-out"
+              _hover={{ transform: 'scale(1.05)' }}
+            />
           </Box>
-          <Box
-            display="flex"
-            flex="1"
-            flexDirection="column"
-            justifyContent="center"
-            marginTop={{ base: '3', sm: '0' }}
-          >
+
+          {/* Detalles del producto */}
+          <Box flex="1">
             <BlogTags tags={['Próximamente', 'Nuevo']} />
             <Heading marginTop="1" color="pink.400">
-              <Text textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Título del Producto
-              </Text>
+              Jabones Saponificados
             </Heading>
             <Text
               as="p"
               marginTop="2"
-              color={useColorModeValue('gray.700', 'gray.200')}
+              color="gray.700"
               fontSize="lg"
+              textAlign="justify"
             >
-              Descripción de un producto próximo que estará disponible pronto.
+              Jabones saponificados que limpian, nutren y cuidan tu piel. Sin ingredientes de origen animal, respetuosos con el medio ambiente y sin testeo en animales. Enriquecidos con aditivos naturales y vegetales. Fabricados con una selección de aceites vegetales, limpian la piel suavemente y generan una espuma exquisita. Y lo más importante, están realizados con mucho amor.
             </Text>
             <BlogAuthor date={new Date()} />
           </Box>
-        </Box>
+        </Flex>
 
-        <Flex justifyContent="center" alignItems="center" my={10}>
+        {/* Segundo Producto */}
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          alignItems="center"
+          mb={50} // Aumentamos el margen inferior
+        >
+          {/* Detalles del producto */}
+          <Box flex="1" order={{ base: 2, md: 1 }}>
+            <Heading marginTop="1" color="pink.400">
+              Hidratante Natural
+            </Heading>
+            <Text
+              as="p"
+              marginTop="2"
+              color="gray.700"
+              fontSize="lg"
+              textAlign="justify"
+            >
+              Nuestros jabones saponificados, limpian, nutren y cuidan tu piel.  sin ingredientes de origen animalhidratante natural está formulada con ingredientes orgánicos que nutren y revitalizan tu piel. Libre de químicos agresivos y perfecta para todo tipo de piel.
+            </Text>
+            <BlogAuthor date={new Date()} />
+          </Box>
+
+          {/* Imagen a la derecha */}
+          <Box
+            flex="1"
+            ml={{ base: 0, md: 10 }} 
+            mb={{ base: 6, md: 0 }}
+            order={{ base: 1, md: 2 }}
+          >
+            <Image
+              borderRadius="lg"
+              src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727786227/5b7c882f-6a16-4da6-9c70-5328fbd746cb_bsnqtc.jpg"
+              alt="Segundo Producto próximo"
+              objectFit="cover"
+              w="100%"
+              h="100%"
+              maxH="400px"
+              transition="0.3s ease-in-out"
+              _hover={{ transform: 'scale(1.05)' }}
+            />
+          </Box>
+        </Flex>
+
+        {/* Divisor con ícono */}
+        <Flex justifyContent="center" alignItems="center" my={20}> 
           <Divider borderColor="pink.500" width="40%" />
           <Icon as={FaLeaf} color="pink.500" mx={2} boxSize={8} />
           <Divider borderColor="pink.500" width="40%" />
         </Flex>
 
-        <Heading as="h2" marginTop="5" color="pink.500" textAlign="center">
-          Más Productos Próximos
-        </Heading>
-        <Divider marginTop="5" />
-        <Wrap spacing="30px" marginTop="5">
-          <WrapItem width={{ base: '100%', sm: '45%', md: '45%', lg: '30%' }}>
-            <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
-                <Box textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                  <Image
-                    transform="scale(1.0)"
-                    src="https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727786227/5b7c882f-6a16-4da6-9c70-5328fbd746cb_bsnqtc.jpg"
-                    alt="Próximo producto"
-                    objectFit="contain"
-                    width="100%"
-                    transition="0.3s ease-in-out"
-                    _hover={{
-                      transform: 'scale(1.05)',
-                    }}
-                  />
-                </Box>
-              </Box>
-              <BlogTags tags={['Próximamente', 'Nuevo']} marginTop={3} />
-              <Heading fontSize="xl" marginTop="2" color="pink.400">
-                <Text textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                  Otro Producto Próximo
-                </Text>
-              </Heading>
-              <Text as="p" fontSize="md" marginTop="2">
-                Este es otro emocionante producto que será lanzado próximamente. ¡Mantente al tanto para más actualizaciones!
-              </Text>
-              <BlogAuthor date={new Date()} />
-            </Box>
-          </WrapItem>
-        </Wrap>
+        {/* Tercer Producto */}
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          alignItems="center"
+          mb={20} // Aumentamos el margen inferior
+        >
+          {/* Imagen a la izquierda */}
+          <Box flex="1" mr={{ base: 0, md: 10 }} mb={{ base: 6, md: 0 }}> 
+            <Image
+              borderRadius="lg"
+              src="https://res-console.cloudinary.com/dpcpcnqmq/thumbnails/v1/image/upload/v1727830306/dXJ1Y3VtX3Fva3k3Yg==/drilldown" 
+              alt="Oleo Urucum"
+              objectFit="cover"
+              w="100%"
+              h="100%"
+              maxH="400px"
+              transition="0.3s ease-in-out"
+              _hover={{ transform: 'scale(1.05)' }}
+            />
+          </Box>
+
+          
+          <Box flex="1">
+            <BlogTags tags={['Próximamente', 'Especial']} />
+            <Heading marginTop="1" color="pink.400">
+            Oleo Urucum
+            </Heading>
+            <Text
+              as="p"
+              marginTop="2"
+              color="gray.700"
+              fontSize="lg"
+              textAlign="justify"
+            >
+             Oleo de urucum, es una materia prima versátil que nutre, hidrata y realza el tono de tu piel, brindando una apariencia luminosa y saludable. Beneficios: acelerador del bronceado, antioxidante, hidratación profunda, textura ligera y no grasa, piel mas radiante.
+            </Text>
+            <BlogAuthor date={new Date()} />
+          </Box>
+        </Flex>
       </Container>
     </Box>
   );
