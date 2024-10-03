@@ -10,21 +10,21 @@
   },
   {
     "id": "002",
-    "nombre": "Balsamo Labial",
+    "nombre": "Bálsamo Labial",
     "precio": 3000,
     "imagen": "https://i.ibb.co/82nTTrR/balsamo-labial.jpg",
-    "categorias": [ "balsamos"],
+    "categorias": ["balsamos"],
     "stock": 10,
     "descripcion": "Bálsamo labial hidratante hecho con ingredientes naturales. Mantén tus labios suaves y protegidos todo el día."
   },
   {
     "id": "003",
-    "nombre": "Serúm Capilar",
+    "nombre": "Serum Capilar",
     "precio": 3800,
     "imagen": "https://i.ibb.co/NNCNjyM/nosotros2-25-11zon.webp",
     "categorias": ["cuidado-capilar"],
     "stock": 10,
-    "descripcion": "Serúm capilar reparador que fortalece y nutre el cabello desde la raíz. Ideal para un acabado brillante y saludable."
+    "descripcion": "Serum capilar reparador que fortalece y nutre el cabello desde la raíz. Ideal para un acabado brillante y saludable."
   },
   {
     "id": "004",
@@ -33,14 +33,14 @@
     "imagen": "https://i.ibb.co/41v2mwV/sepillo-32-11zon.webp",
     "categorias": ["cuidado-personal"],
     "stock": 10,
-    "descripcion": "Nuestro cepillo de dientes de bambú es la elección consciente para cuidar tus dientes y el medio ambiente. Fabricado con materiales orgánicos y sostenibles, este cepillo no solo es igual de duradero que uno de plástico, sino que también ofrece una solución ecológica. Una vez que completes su uso, simplemente separa las cerdas del mango con una pinza: las cerdas se pueden reciclar adecuadamente, mientras que el mango de bambú es perfecto para compostar. Así, cada cepillo contribuye a reducir el desperdicio y proteger nuestro planeta. Una vez que lo terminas de usar separar las cerdas del sepillo con una pinza. quedan las cerdas listas para reciclar y el mango para compostar. Sumate al cambio sustentable con pequeños habitos. "
+    "descripcion": "Nuestro cepillo de dientes de bambú es la elección consciente para cuidar tus dientes y el medio ambiente. Fabricado con materiales orgánicos y sostenibles, este cepillo no solo es igual de duradero que uno de plástico, sino que también ofrece una solución ecológica. Una vez que completes su uso, simplemente separa las cerdas del mango con una pinza: las cerdas se pueden reciclar adecuadamente, mientras que el mango de bambú es perfecto para compostar. Así, cada cepillo contribuye a reducir el desperdicio y proteger nuestro planeta. Una vez que lo terminas de usar separar las cerdas del cepillo con una pinza. Quedan las cerdas listas para reciclar y el mango para compostar. Súmate al cambio sustentable con pequeños hábitos."
   },
   {
     "id": "05",
     "nombre": "Home Spray de Banana",
     "precio": 3500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray, linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "¿Amante de los aromas tropicales? Nuestro Home Spray de Bananas te transportará a una playa soleada. Notas dulces y exóticas de plátano maduro se entrelazan para crear una fragancia irresistible. Ideal para esos momentos en los que necesitas un toque de alegría."
   },
@@ -51,7 +51,7 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727889085/bcbf3fb6-da32-4b8f-8c4f-72b3c6bfbbcc_nqm8l8.jpg",
     "categorias": ["cremas"],
     "stock": 10,
-    "descripcion": "Desmaquillante sólido  de ananá, es sólido, es vegano, es de ananá ¿Qué más  le podemos contar?. Bueno primero que está elaborado con ceras y aceites vegetales, sin crueldad animal.Su principal ingrediente es la manteca de karite que es super suave y emoliente. Ingrediente muy noble y a diferencia de la manteca de cacao, esta no es comedogenica(no corremos riesgo de que salgan granos). Este desmaquillante es a base de aceites por lo que barre bien con los maquillajes a prueba de agua, así como también  limpia nuestro rostro: tiene un tensioactivo derivado del coco (coco glucoside)por lo que está barrita y una enjuagada de rostro con agua es todo lo que necesitas para sacar el maquillaje y limpiar la cara..."
+    "descripcion": "Desmaquillante sólido de ananá, es sólido, es vegano, es de ananá ¿Qué más le podemos contar? Bueno primero que está elaborado con ceras y aceites vegetales, sin crueldad animal. Su principal ingrediente es la manteca de karite que es súper suave y emoliente. Ingrediente muy noble y a diferencia de la manteca de cacao, esta no es comedogenica (no corremos riesgo de que salgan granos). Este desmaquillante es a base de aceites por lo que barre bien con los maquillajes a prueba de agua, así como también limpia nuestro rostro: tiene un tensioactivo derivado del coco (coco glucoside) por lo que esta barrita y una enjuagada de rostro con agua es todo lo que necesitas para sacar el maquillaje y limpiar la cara..."
   },
   {
     "id": "007",
@@ -69,14 +69,14 @@
     "imagen": "https://i.ibb.co/whBjt5H/index-4-20-11zon.webp",
     "categorias": ["skin care"],
     "stock": 10,
-    "descripcion": "Loción tonificante a base de rosas que refrezca y revitaliza la piel. Ideal para pieles sensibles y secas. Ayuda a regular el PH de la piel y a mantenerla hidratada."
+    "descripcion": "Loción tonificante a base de rosas que refresca y revitaliza la piel. Ideal para pieles sensibles y secas. Ayuda a regular el PH de la piel y a mantenerla hidratada."
   },
   {
     "id": "009",
-    "nombre": "Jabón Natural",
+    "nombre": "Jabon Natural",
     "precio": 2500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727890027/87868745-ff98-4940-8019-4ddeda50d8b9_uabexb.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
     "descripcion": "Nuestros jabones naturales hechos a mano son ideales para pieles sensibles. Ofrecen una limpieza profunda sin resecar, dejando la piel suave y fresca. Cada variedad tiene su propio aroma característico: manzanilla, coco, avena, rosa mosqueta, lavanda, jazmín y caléndula. Elige tu favorito y disfruta de una experiencia sensorial única en cada baño."
   },
@@ -87,16 +87,16 @@
     "imagen": "https://i.ibb.co/SvzmqmF/sales-31-11zon.webp",
     "categorias": ["cuidado-personal"],
     "stock": 10,
-    "descripcion": "Sales de baño relajantes e hidratantes. Lavanda y Rosas. Las sales de baño realizan una micro-exfoliación y potencian las propiedades hidratantes del jabón que nos deja la piel más cremosa y suave.\nContiene sal de Himalaya y flores de rosas. Rica en magnesio, regula la grasitud de la piel, hidrata y purifica.\nAroma: Rosas y gardenias.\nPresentación: petaca de vidrio (retornable) 200gr."
+    "descripcion": "Sales de baño relajantes e hidratantes. Lavanda y Rosas. Las sales de baño realizan una micro-exfoliación y potencian las propiedades hidratantes del jabón que nos deja la piel más cremosa y suave. Contiene sal de Himalaya y flores de rosas. Rica en magnesio, regula la grasitud de la piel, hidrata y purifica. Aroma: Rosas y gardenias. Presentación: petaca de vidrio (retornable) 200gr."
   },
   {
     "id": "011",
     "nombre": "Sales de Baño Aroma: Lavanda",
-    "precio": 7000,
-    "imagen": "https://i.ibb.co/SvzmqmF/sales-31-11zon.webp",
+    "precio": 4000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727903208/878f95b4-17a6-4749-95c9-b11edc6f9626_rva2ks.jpg",
     "categorias": ["cuidado-personal"],
     "stock": 10,
-    "descripcion": "Sales de baño relajantes e hidratantes.\nLavanda y Rosas. Las sales de baño realizan una micro-exfoliación y potencian las propiedades hidratantes del jabón que nos deja la piel más cremosa y suave.\nLavanda con flores de lavanda y Epson: Ayuda a expulsar toxinas del cuerpo, eliminar picores de la piel, alivia tensiones y combate dolores musculares y artrosis. Invoca el sueño, desintoxica y promueve una mejor circulación de la sangre.\nPresentación: petaca de vidrio (retornable) 200gr."
+    "descripcion": "Sales de baño relajantes e hidratantes. Lavanda y Rosas. Las sales de baño realizan una micro-exfoliación y potencian las propiedades hidratantes del jabón que nos deja la piel más cremosa y suave. Lavanda con flores de lavanda y Epson: Ayuda a expulsar toxinas del cuerpo, eliminar picores de la piel, alivia tensiones y combate dolores musculares y artrosis. Invoca el sueño, desintoxica y promueve una mejor circulación de la sangre. Presentación: petaca de vidrio (retornable) 200gr."
   },
   {
     "id": "012",
@@ -109,21 +109,21 @@
   },
   {
     "id": "013",
-    "nombre": "Jabón Batido de Sandía",
+    "nombre": "Jabon Batido de Sandia",
     "precio": 9000,
     "imagen": "https://i.ibb.co/7VjXW7b/batido-10-11zon.webp",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "014",
     "nombre": "Post Solar",
     "precio": 6200,
-    "imagen": "https://i.ibb.co/98JNp9L/post-solar.webp",
-    "categorias": ["Summer"],
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727902978/b1bd9938-7ebd-40be-9463-90dcc80f9a71_okkpnt.jpg",
+    "categorias": ["summer"],
     "stock": 10,
-    "descripcion": "Crema para peinar.\nUna emulsión a base de gel de lino.\nFamoso por sus propiedades para tu cabello. Rico en nutrientes, ácidos grasos y proteínas. Dada su concentración de omega-3 y vitaminas B y E, es un poderoso humectante y antioxidante, con la capacidad de sellar la humedad y fortalecer el cabello.\n¿Qué esperas para probarlo? Es una crema para peinar que no solo controla tu cabello sino que también lo nutre e hidrata. ¿A qué huele? A mango...\nIdeal para después de la pileta, mar, río, colonia...\nSin sulfatos.\nVegano.\nNo testeado en animales.\nLibre de gluten.\nCruelty-free."
+    "descripcion": "Crema para peinar. Una emulsión a base de gel de lino. Famoso por sus propiedades para tu cabello. Rico en nutrientes, ácidos grasos y proteínas. Dada su concentración de omega-3 y vitaminas B y E, es un poderoso humectante y antioxidante, con la capacidad de sellar la humedad y fortalecer el cabello. ¿Qué esperas para probarlo? Es una crema para peinar que no solo controla tu cabello, sino que también lo nutre e hidrata. ¿A qué huele? A mango... ideal para después de la pileta, mar, río, colonia…sin sulfatos, vegano, no testeado en animales, libre de gluten y cruelty-free."
   },
   {
     "id": "015",
@@ -136,7 +136,7 @@
   },
   {
     "id": "016",
-    "nombre": "Balsamo Labial en Lata",
+    "nombre": "Bálsamo Labial en Lata",
     "precio": 2500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727814281/afbv1gc36qgxdd1vwiml.jpg",
     "categorias": ["balsamos"],
@@ -147,7 +147,7 @@
     "id": "017",
     "nombre": "Desodorante Natural en Lata",
     "precio": 4500,
-    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727814281/afbv1gc36qgxdd1vwiml.jpg",
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727903066/56d88e4d-f884-49bc-a66f-0bed8d43c777_b6opcc.jpg",
     "categorias": ["cuidado-personal"],
     "stock": 10,
     "descripcion": "Desodorante natural vegano en lata. Contiene: manteca de karité, aceite de coco, arcilla, caolín, aceite de salvia y lavanda. Vive una experiencia única, libre de químicos derivados del petróleo."
@@ -157,7 +157,7 @@
     "nombre": "Oleo Rosa de Mosqueta",
     "precio": 4500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/5c03532d-2791-47c6-868d-65a41ba18f76_pltdww.jpg",
-    "categorias": ["oleos-naturales", "cuidado-personal"],
+    "categorias": ["cuidado-personal"],
     "stock": 10,
     "descripcion": "Posee omega 3 y omega 6, vitamina A y E. Cicatriza y repara efectivamente la piel y le da elasticidad. Combate el envejecimiento prematuro. Mejora las manchas de la piel."
   },
@@ -166,7 +166,7 @@
     "nombre": "Oleo de Jojoba",
     "precio": 4500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/4e14d60f-17ba-48d5-8a57-ffcdefd830e5_tunrnm.jpg",
-    "categorias": ["oleos-naturales", "cuidado-personal"],
+    "categorias": ["cuidado-personal"],
     "stock": 10,
     "descripcion": "Aceite de rápida absorción rico en antioxidantes y vitaminas E, A y D. Sirve para hidratar y humectar las pieles tanto secas como grasas. Regula la producción de sebo en la piel. Tiene propiedades astringentes y antisépticas, el aliado perfecto para combatir todo tipo de infecciones, como por ejemplo pieles con acné."
   },
@@ -175,7 +175,7 @@
     "nombre": "Oleo de Ricino",
     "precio": 4500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/65747d2c-1ac6-45d6-b451-cc7ae471ead6_lp7tgj.jpg",
-    "categorias": ["oleos-naturales", "cuidado-personal"],
+    "categorias": ["cuidado-personal"],
     "stock": 10,
     "descripcion": "Fortalecedor de uñas. Incentiva el crecimiento de las pestañas. Si masajeas tu cuero cabelludo con este aceite también incentiva el crecimiento del cabello."
   },
@@ -184,25 +184,25 @@
     "nombre": "Aceite de Coco",
     "precio": 4500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/63afb673-e0aa-46ea-85d4-926465c2e151_mas5ea.jpg",
-    "categorias": ["oleos-naturales", "cuidado-personal"],
+    "categorias": ["cuidado-personal"],
     "stock": 10,
-    "descripcion": "Quizás el más hidratante y el que mejor penetra en el cabello. Acondiciona e hidrata el cabello (es ideal para cabellos maltratados y/o teñidos), excelente para prevenir o tratar estrías.\nAl ser antibiótico está en la fórmula de muchos desodorantes."
+    "descripcion": "Quizás el más hidratante y el que mejor penetra en el cabello. Acondiciona e hidrata el cabello (es ideal para cabellos maltratados y/o teñidos), excelente para prevenir o tratar estrías. Al ser antibiótico está en la fórmula de muchos desodorantes."
   },
   {
     "id": "022",
     "nombre": "Oleo de Almendras",
     "precio": 4500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727830749/a710fb2d-651e-4382-ab81-0a63ab079188_t6aeea.jpg",
-    "categorias": ["oleos-naturales", "cuidado-personal"],
+    "categorias": ["cuidado-personal"],
     "stock": 10,
-    "descripcion": "Conocido por dejar la piel y el cabello suave y súper hidratante.\nEs ideal para aplicar en las puntas del cabello sin sobrecargarlo demasiado.\nComo desmaquillante facial para pieles secas.\nPara realizar masajes.\nPara tratar la costra láctea en los bebés."
+    "descripcion": "Conocido por dejar la piel y el cabello suave y súper hidratante. Es ideal para aplicar en las puntas del cabello sin sobrecargarlo demasiado. Como desmaquillante facial para pieles secas, para realizar masajes, para tratar la costra láctea en los bebés."
   },
   {
     "id": "023",
     "nombre": "Home Spray de Frutilla",
     "precio": 3500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "Sumérgete en la dulzura de las frutillas frescas con nuestro Home Spray de Frutilla. Su aroma jugoso y vibrante llenará tu espacio con notas de verano y alegría. Perfecto para crear un ambiente acogedor y refrescante."
   },
@@ -211,7 +211,7 @@
     "nombre": "Home Spray de Limón",
     "precio": 3500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "La frescura cítrica del limón es incomparable. Nuestro Home Spray de Limón captura esa vitalidad y energía. Rocía un poco en tu hogar para revitalizar tus sentidos y llenar el ambiente de vitalidad."
   },
@@ -220,7 +220,7 @@
     "nombre": "Home Spray de Lemon Pie",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "¿Quién puede resistirse al aroma de un delicioso lemon pie recién horneado? Nuestro Home Spray de Lemon Pie combina notas de limón, vainilla y masa crujiente para crear una fragancia reconfortante y golosa. Perfecto para los amantes de los postres."
   },
@@ -229,7 +229,7 @@
     "nombre": "Home Spray de Naranja",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "La naranja es sinónimo de frescura y alegría. Nuestro Home Spray de Naranja te envolverá en su aroma cítrico y revitalizante. Rocía un poco en tu habitación para llenarla de vitalidad."
   },
@@ -238,7 +238,7 @@
     "nombre": "Home Spray de Uva",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["Fragancias Aromaticas"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "Las uvas maduras tienen un aroma dulce y embriagador. Nuestro Home Spray de Uva captura esa esencia frutal y la lleva a tu hogar. Ideal para momentos relajantes y de desconexión."
   },
@@ -247,7 +247,7 @@
     "nombre": "Home Spray de Uva y Limón",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "Home Spray de Uva y Limón: La combinación de uvas maduras y limón crea un aroma fresco y revitalizante. Nuestro Home Spray captura la esencia frutal de las uvas dulces y la energía cítrica del limón, llevándola directamente a tu hogar. Ideal para momentos relajantes, desconexión y para llenar tus espacios con una fragancia embriagadora."
   },
@@ -256,7 +256,7 @@
     "nombre": "Home Spray de Gardenia",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "La gardenia es una flor exquisita con un aroma floral y dulce. Nuestro Home Spray de Gardenia te transportará a un jardín en plena floración. Rocía un poco para disfrutar de su elegancia."
   },
@@ -265,16 +265,16 @@
     "nombre": "Home Spray de Coniglio",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
-    "descripcion": "¿Qué es un aroma de \"coniglio\"? Bueno, en este caso, es una mezcla intrigante de notas herbales, tierra húmeda y un toque de misterio. Rocía nuestro Home Spray de Coniglio para crear un ambiente único y evocador."
+    "descripcion": "¿Qué es un aroma de coniglio Bueno, en este caso, es una mezcla intrigante de notas herbales, tierra húmeda y un toque de misterio. Rocía nuestro Home Spray de Coniglio para crear un ambiente único y evocador."
   },
   {
     "id": "031",
     "nombre": "Home Spray de Chicle",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["home spray", "linea hogar"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "¿Recuerdas la nostalgia de los chicles de tu infancia? Nuestro Home Spray de Chicle evoca esos momentos dulces y divertidos. Notas de menta y azúcar se combinan para crear una fragancia juguetona."
   },
@@ -283,7 +283,7 @@
     "nombre": "Home Spray de Tuti-Fruti",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727874078/7ab84669-249f-458e-9c1e-669f4f31a7a6_yjqhco.jpg",
-    "categorias": ["Fragancias Aromaticas"],
+    "categorias": ["home spray"],
     "stock": 10,
     "descripcion": "¿Por qué elegir un solo aroma cuando puedes tenerlos todos? Nuestro Home Spray de Tuti Fruti es una explosión de frutas variadas: piña, fresa, mango y más. Rocía generosamente para llenar tu espacio de alegría y vitalidad."
   },
@@ -292,9 +292,9 @@
     "nombre": "Lip Scrub",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727882676/lip_scrub_fkgmyn.jpg",
-    "categorias": ["Balsamos"],
+    "categorias": ["balsamos"],
     "stock": 10,
-    "descripcion": "Exfoliante para labios.\nLa piel de los labios también necesita exfoliación; su función es eliminar células muertas, que dan el aspecto de labios agrietados y resecos.\nComo primer paso hay que exfoliar y luego el labio queda preparado y listo para que el bálsamo labial penetre y cumpla su función correctamente.\nEs un paso fundamental para conseguir labios prolijos, sanos y bellos. A su vez, el maquillaje que pongamos sobre los labios previamente exfoliados va a durar más tiempo y lucirá mejor.\nCómo usarlo: usar sobre el labio seco. Masajear en círculos hasta que las partículas se disuelvan y luego enjuagar con agua. El labio lucirá más carnoso, con más volumen, queda suave, hidratado y nutrido. Lo ideal es usarlo 2 veces por semana.\n¿Qué contiene?: manteca de karité, aceite de almendras, azúcar orgánica, vitamina E.\nImportante: producto apto veganos, libre de colorantes artificiales, sin petrolatos y químicos agregados.\nMantener bien cerrado, en lugar fresco y oscuro.\nSabor: Frutilla y Menta.\nEnvase de vidrio, reutilizable."
+    "descripcion": "Exfoliante para labios. La piel de los labios también necesita exfoliación; su función es eliminar células muertas, que dan el aspecto de labios agrietados y resecos. Como primer paso hay que exfoliar y luego el labio queda preparado y listo para que el bálsamo labial penetre y cumpla su función correctamente. Es un paso fundamental para conseguir labios prolijos, sanos y bellos. A su vez, el maquillaje que pongamos sobre los labios previamente exfoliados va a durar más tiempo y lucirá mejor. Cómo usarlo: usar sobre el labio seco. Masajear en círculos hasta que las partículas se disuelvan y luego enjuagar con agua. El labio lucirá más carnoso, con más volumen, queda suave, hidratado y nutrido. Lo ideal es usarlo 2 veces por semana. ¿Qué contiene?: manteca de karité, aceite de almendras, azúcar orgánica, vitamina E. Importante: producto apto veganos, libre de colorantes artificiales, sin petrolatos y químicos agregados. Mantener bien cerrado, en lugar fresco y oscuro. Sabor: Frutilla y Menta. Envase de vidrio, reutilizable."
   },
   {
     "id": "034",
@@ -303,16 +303,16 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727882676/crema_de_coco_laqxbq.jpg",
     "categorias": ["cremas"],
     "stock": 10,
-    "descripcion": "Propiedades:\nCrema hidratante a base de aceite de coco. Hidrata en profundidad. Apta para todo tipo de pieles.\nVegano.\nNo testeado en animales.\nLibre de gluten.\nEco-friendly."
+    "descripcion": "Propiedades: Crema hidratante a base de aceite de coco. Hidrata en profundidad. Apta para todo tipo de pieles, vegano, no testeado en animales, libre de gluten y eco-friendly."
   },
   {
     "id": "035",
-    "nombre": "Desmaquillante sólido  de ananá",
+    "nombre": "Desmaquillante sólido de ananá",
     "precio": 4000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727891083/ac5b0583-2553-4824-8fa9-3d39b5a55742_baczks.jpg",
     "categorias": ["skin care"],
     "stock": 10,
-    "descripcion": "Es sólido, es vegano, es de ananá ¿Qué más  le podemos contar?. Bueno primero que está elaborado con ceras y aceites vegetales, sin crueldad animal .Su principal ingrediente es la manteca de karite que es super suave y emoliente. Ingrediente muy noble y a diferencia de la manteca de cacao, esta no es comedogenica (no corremos riesgo de que salgan granos). Este desmaquillante es a base de aceites por lo que barre bien con los maquillajes a prueba de agua, así como también  limpia nuestro rostro: tiene un tensioactivo derivado del coco (coco glucoside) por lo que está barrita y una enjuagada de rostro con agua es todo lo que necesitas para sacar el maquillaje y limpiar la cara... Aroma: Anana. La pastilla pesa: 40gr."
+    "descripcion": "Es sólido, es vegano, es de ananá ¿Qué más le podemos contar? Bueno primero que está elaborado con ceras y aceites vegetales, sin crueldad animal. Su principal ingrediente es la manteca de karite que es súper suave y emoliente. Ingrediente muy noble y a diferencia de la manteca de cacao, esta no es comedogenica (no corremos riesgo de que salgan granos). Este desmaquillante es a base de aceites por lo que barre bien con los maquillajes a prueba de agua, así como también limpia nuestro rostro: tiene un tensioactivo derivado del coco (coco glucoside) por lo que esta barrita y una enjuagada de rostro con agua es todo lo que necesitas para sacar el maquillaje y limpiar la cara... Aroma: Ananá. La pastilla pesa: 40gr."
   },
   {
     "id": "036",
@@ -321,14 +321,14 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727891718/75e61297-f23a-45c4-b645-d37b178fe03b_p04glc.jpg",
     "categorias": ["skin care"],
     "stock": 10,
-    "descripcion": "Agua micelar natural vegana. Las micelas actúan como imanes que absorben la suciedad, el sebo, el maquillaje y te limpia profundamente la piel. ¿Cómo la uso?. Agito  el envase, la aplico en un pad ( trata que sea de tela y no de algodón, así la reutilizas y no generas desechos innecesarios) y lo pasas por el rostro y escote.  Después enjuagar con agua. El Agua Micelar es un limpiador facial, por lo que es el primer y fundamental paso de la rutina de limpieza, ya que elimina las impurezas y la grasitud de la piel acumulada durante el día. Es apropiada para todo tipo de piel.."
+    "descripcion": "Agua micelar natural vegana. Las micelas actúan como imanes que absorben la suciedad, el sebo, el maquillaje y te limpia profundamente la piel. ¿Cómo la uso? Agito el envase, la aplico en un pad (trata que sea de tela y no de algodón, así la reutilizas y no generas desechos innecesarios) y lo pasas por el rostro y escote. Después enjuagar con agua. El Agua Micelar es un limpiador facial, por lo que es el primer y fundamental paso de la rutina de limpieza, ya que elimina las impurezas y la grasitud de la piel acumulada durante el día. Es apropiada para todo tipo de piel..."
   },
   {
     "id": "037",
     "nombre": "Jabon de Miel",
     "precio": 2500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727891718/8460f548-7dbe-4ddc-92f4-4de9da46405a_c90llv.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
     "descripcion": "Nuestro jabón de miel es una verdadera joya para la piel. Sus propiedades antiinflamatorias lo convierten en un aliado natural para calmar y suavizar la piel irritada. Además, sus propiedades analgésicas ofrecen alivio y bienestar. Pero eso no es todo: este jabón también es un escudo contra el envejecimiento prematuro, gracias a los antioxidantes presentes en la miel. Y, por si fuera poco, su aroma dulce y reconfortante lo hace sumamente relajante. Un pequeño lujo para tu rutina diaria."
   },
@@ -337,9 +337,9 @@
     "nombre": "Acondicionador Solido Citrico",
     "precio": 2500,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727892248/55a94e77-7d0c-49c9-b593-c02fb8a5f837_y0x7l6.jpg",
-    "categorias": ["cuidado-capilar" , "Summer"],
+    "categorias": ["cuidado-capilar", "summer"],
     "stock": 10,
-    "descripcion": "Este acondicionador está elaborado con aceites esenciales citricos: mandarina, limón y naranja sumado un oleato de achiote que posee vitaminas A, B, C y manteca de karite. Por lo tanto limpia, desengrasa, acondiciona y ayuda a controlar el frizz y el plus es que tiene protección solar, ideal este verano"
+    "descripcion": "Este acondicionador está elaborado con aceites esenciales cítricos: mandarina, limón y naranja sumado un oleato de achiote que posee vitaminas A, B, C y manteca de karite. Por lo tanto, limpia, desengrasa, acondiciona y ayuda a controlar el friz y el plus es que tiene protección solar, ideal este verano"
   },
   {
     "id": "039",
@@ -348,7 +348,7 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727892724/9b0688ac-59a8-4057-9eb3-57df4b92749c_bxdugj.jpg",
     "categorias": ["perfumes"],
     "stock": 10,
-    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. CALECOCO: Este perfume en particular es un abrazo cálido. Imagina la suavidad del sol acariciando tu piel en una tarde de verano. La combinación de caléndula, coco y cedro es mágica: la caléndula, con sus propiedades calmantes y regeneradoras, se entrelaza con la dulzura tropical del coco y la profundidad aromática del cedro. Juntos, crean una fragancia que te envuelve como una manta suave. El cedro aporta una nota terrosa que equilibra la dulzura, haciendo de este perfume una elección ideal para salir de noche. Es sutil pero con cuerpo, dejando una estela de elegancia y calidez. Cierra los ojos y siente cómo la calidez se funde contigo. Es como un susurro de bienestar en cada gota."
+    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. CALECOCO: Este perfume en particular es un abrazo cálido. Imagina la suavidad del sol acariciando tu piel en una tarde de verano. La combinación de caléndula, coco y cedro es mágica: la caléndula, con sus propiedades calmantes y regeneradoras, se entrelaza con la dulzura tropical del coco y la profundidad aromática del cedro. Juntos, crean una fragancia que te envuelve como una manta suave. El cedro aporta una nota terrosa que equilibra la dulzura, haciendo de este perfume una elección ideal para salir de noche. Es sutil, pero con cuerpo, dejando una estela de elegancia y calidez. Cierra los ojos y siente cómo la calidez se funde contigo. Es como un susurro de bienestar en cada gota."
   },
   {
     "id": "040",
@@ -357,7 +357,7 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727892724/f98c7351-dae0-4ef2-977b-17888c06e78d_fn0x3m.jpg",
     "categorias": ["perfumes"],
     "stock": 10,
-    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. LAMELO es la contracara de los perfumes cálidos y envolventes; destaca por su frescura, dulzura y una sensación inmediata de alegría. Este perfume veraniego te transporta a la playa, invitándote a relajarte y disfrutar del sol y la brisa marina. Su composición única incluye cuatro esencias principales: melón, que aporta frescura frutal; gardenia, con su toque floral delicado; alcanfor, que añade una sensación de frescura vigorizante; y vainilla, que redondea la fragancia con un toque dulce y reconfortante. Además, viene en formato roll-on, lo que lo hace super práctico y económico."
+    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. LAMELO es la contracara de los perfumes cálidos y envolventes; destaca por su frescura, dulzura y una sensación inmediata de alegría. Este perfume veraniego te transporta a la playa, invitándote a relajarte y disfrutar del sol y la brisa marina. Su composición única incluye cuatro esencias principales: melón, que aporta frescura frutal; gardenia, con su toque floral delicado; alcanfor, que añade una sensación de frescura vigorizante; y vainilla, que redondea la fragancia con un toque dulce y reconfortante. Además, viene en formato roll-on, lo que lo hace súper práctico y económico."
   },
   {
     "id": "041",
@@ -366,52 +366,52 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727892724/b3cdaa0f-5a34-4d2e-a886-e5b46043ca3d_ieavhv.jpg",
     "categorias": ["perfumes"],
     "stock": 10,
-    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. DUROESCÁNDALO es una fragancia audaz y vibrante que combina la dulzura jugosa del durazno con la delicadeza floral del jazmín, todo sostenido por la profundidad terrosa y cálida del sándalo. Es un perfume que no pasa desapercibido, ideal para quienes buscan una esencia que deje huella. La fusión de estas tres notas crea una alquimia olfativa que evoca tanto frescura como sofisticación, haciéndolo perfecto para ocasiones donde quieras destacar con una fragancia poderosa y envolvente."
+    "descripcion": "Nuestros Perfumes: Están diseñados para mucho más que simplemente oler bien. Van más allá de las notas aromáticas; buscan evocar sensaciones de bienestar y crear alquimias olfativas placenteras. Cada fragancia es como una pequeña historia que se despliega en la piel, despertando emociones y recuerdos. Desde la frescura revitalizante hasta la calidez reconfortante, nuestros perfumes son una experiencia sensorial completa. DUROESCANDALO es una fragancia audaz y vibrante que combina la dulzura jugosa del durazno con la delicadeza floral del jazmín, todo sostenido por la profundidad terrosa y cálida del sándalo. Es un perfume que no pasa desapercibido, ideal para quienes buscan una esencia que deje huella. La fusión de estas tres notas crea una alquimia olfativa que evoca tanto frescura como sofisticación, haciéndolo perfecto para ocasiones donde quieras destacar con una fragancia poderosa y envolvente."
   },
   {
     "id": "042",
-    "nombre": "Jabón Batido de Vainicoco",
+    "nombre": "Jabon Batido de Vainicoco",
     "precio": 9000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727893761/b182308e-8a9f-4839-a642-4d68175a7e12_jthidy.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!! suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "043",
-    "nombre": "Jabón Batido de Palito de la Selva",
+    "nombre": "Jabon Batido de Palito de la Selva",
     "precio": 9000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727893761/a2487e50-e9b3-4be1-883f-0ccabdb76387_tsaqaz.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!! suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "044",
-    "nombre": "Jabón Batido de Lemon Pie",
+    "nombre": "Jabon Batido de Lemon Pie",
     "precio": 9000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727893761/4aaf5696-3cef-4008-8f27-f119820430fc_eq1aod.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "045",
-    "nombre": "Jabón Batido de Manzana Verde",
+    "nombre": "Jabon Batido de Manzana Verde",
     "precio": 9000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727893761/4a5ccecd-8e3d-4e35-a6c1-96491235a1d7_fgkoom.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "046",
-    "nombre": "Jabón Batido de Maracuya",
+    "nombre": "Jabon Batido de Maracuya",
     "precio": 9000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727894009/55aaeb8c-060f-4a03-835b-5dba4794d09b_b4gdnf.jpg",
-    "categorias": ["Jabones"],
+    "categorias": ["jabones"],
     "stock": 10,
-    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita  como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil  de usar y se puede incorporar en tu rutina de cuidado diario Vos ya lo probaste?"
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
   },
   {
     "id": "047",
@@ -420,15 +420,69 @@
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727896947/8f2b58dc-f029-4928-a7a4-1e1d9265d61d_eq5uid.jpg",
     "categorias": ["skin care"],
     "stock": 10,
-    "descripcion": "Descubre el secreto para una piel radiante con nuestras mascarillas de arcilla naturalez. Despierta la belleza que llevas dentro con estos increibles beneficios: limpieza profunda, suavidad instantanea, brillo natural e hidrataicón intensa. Tenemos 3 variedades con diferentes beneficios Blanca: Ayuda a hidratar la piel del rostro, limpia las impurezas y ayudara a renovar las celulas; Verde: Purifica y revitaliza la piel mediante la exofiliación. Regula la producción excesiva del sebo en pieles grasas o mixtas; Roja: Actua regenerando la piel, estimula la cicatrización y ayuda a suavizar marcas y cicatrizes siendo también adecuadad para pieles mixtas y con acné."
+    "descripcion": "Descubre el secreto para una piel radiante con nuestras mascarillas de arcilla naturales. Despierta la belleza que llevas dentro con estos increíbles beneficios: limpieza profunda, suavidad instantánea, brillo natural e hidratación intensa. Tenemos 3 variedades con diferentes beneficios Blanca: Ayuda a hidratar la piel del rostro, limpia las impurezas y ayudara a renovar las células; Verde: Purifica y revitaliza la piel mediante la exfoliación. Regula la producción excesiva del sebo en pieles grasas o mixtas; Roja: Actúa regenerando la piel, estimula la cicatrización y ayuda a suavizar marcas y cicatrices siendo también adecuada para pieles mixtas y con acné."
   },
   {
     "id": "048",
-    "nombre": "Crema Facial de Cúrcuma",
+    "nombre": "Crema Facial de Curcuma",
     "precio": 3000,
     "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727897510/aa0b25c5-bf19-455c-8146-429eadabbd4a_yexjob.jpg",
-    "categorias": ["cremas" , "skin care"],
+    "categorias": ["cremas", "skin care"],
     "stock": 10,
-    "descripcion": "Crema liviana para el rostro. Trata el acné y las manchas de la piel. Ideal para pieles normales a grasas. Hidrata sin sobreengrasar. Incluye cucharita de madera!"
+    "descripcion": "Crema liviana para el rostro. Trata el acné y las manchas de la piel. Ideal para pieles normales a grasas. Hidrata sin sobreengrasar. ¡Incluye cucharita de madera!"
+  },
+  {
+    "id": "049",
+    "nombre": "Jabon Detox",
+    "precio": 3000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727904099/08ccd6e1-e08a-4b44-b761-631dc7df0ac4_z5nq1c.jpg",
+    "categorias": ["jabones"],
+    "stock": 10,
+    "descripcion": "El jabón detox con carbón activado es un producto simple y efectivo que combina tres ingredientes clave para limpiar profundamente la piel sin causar irritación. Sus principales componentes son la glicerina neutra, que es hipo alergénica y recomendada para tratar acné y grasa en la piel; el carbón activado, que absorbe toxinas y realiza una micro-exfoliación que ayuda a eliminar puntos negros; y el aceite esencial de romero, con propiedades antibacteriales, cicatrizantes e hidratantes que mejoran la elasticidad y firmeza de la piel. Se recomienda usarlo de 2 a 3 veces por semana para una limpieza profunda."
+  },
+  {
+    "id": "050",
+    "nombre": "Jabon Masajeador",
+    "precio": 2500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727904919/masaje_ova6u6.jpg",
+    "categorias": ["jabones"],
+    "stock": 10,
+    "descripcion": "Nuestros jabones masajeadores son la opción perfecta para consentirte y relajarte en la ducha. Con nuestra línea premiun podrás elegir entre los diferentes aromas: Manzanilla, lavanda, rosa mosqueta, avena, citrus y coco. Cada jabón está diseñado para brindarte una experiencia sensorial única y placentera. Disfruta de la suavidad y fragancia de estos jabones mientras te relajas y cuidas tu piel"
+  },
+  {
+    "id": "051",
+    "nombre": "Shampoo Solido de Menta y Espirulina",
+    "precio": 5000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727904919/shampoo_ik7gez.jpg",
+    "categorias": ["cuidado-capilar"],
+    "stock": 10,
+    "descripcion": "Cabellos grasos y/o con caspa. Ingredientes principales: menta espirulina, aceite de almendras, té verde y aceite de pepitas de uva. Vegano, libre de gluten, sin sulfatos, no testeados en animales, eco friendly"
+  },
+  {
+    "id": "052",
+    "nombre": "Shampoo Solido Calendula y Coco",
+    "precio": 5000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727904919/shacalecoco_ogbuwd.jpg",
+    "categorias": ["cuidado-capilar"],
+    "stock": 10,
+    "descripcion": "Shampoo sólido caléndula y coco para cabellos normales, máxima nutrición. Ingredientes: aceite de palta, aceite de coco, arcilla blanca y oleato de caléndula. Vegano, libre de gluten, no testeados en animales, eco friendly, sin sulfatos."
+  },
+  {
+    "id": "053",
+    "nombre": "Acondicionador Solido de Palta y Karite",
+    "precio": 5000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727904919/acond_ptpkpj.jpg",
+    "categorias": ["cuidado-capilar"],
+    "stock": 10,
+    "descripcion": "La textura del jabón batido es todo lo que está bien!!!suavecita como un postre de mousse!! El jabón batido corporal es una excelente opción para limpiar y mantener tu piel suave e hidratada. Además, es fácil de usar y se puede incorporar en tu rutina de cuidado diario ¿vos ya lo probaste?"
+  },
+  {
+    "id": "054",
+    "nombre": "Bombones Aromaticos de Cera de Soja",
+    "precio": 3000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1727908330/a306c85e-faad-4b91-bd7a-b2819fc20650_y0iqr8.jpg",
+    "categorias": ["linea hogar"],
+    "stock": 10,
+    "descripcion": "Están elaborados con cera de soja y aromatizados con esencias. Se utilizan en hornitos de cerámica, reemplazando el sistema tradicional del agua y esencia líquida, dejando un riquísimo aroma. También se pueden colocar en cajoneras. Los bombones vienen presentados en caja de lata (ideal para regalo) o en bolsita de organza."
   }
 ]

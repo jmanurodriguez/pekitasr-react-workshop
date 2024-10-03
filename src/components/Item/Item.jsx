@@ -91,7 +91,6 @@ export function Item({ producto }) {
             mt={4}
             w="full"
             colorScheme="pink"
-            bgGradient='linear(to-br, pink.400, pink.900)'
             textTransform="uppercase"
             _hover={{ bg: "pink.600" }}
           >
@@ -117,6 +116,6 @@ Item.propTypes = {
     categorias: PropTypes.oneOfType([ 
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.string
-    ]).isRequired, 
+    ])
   }).isRequired,
 };
