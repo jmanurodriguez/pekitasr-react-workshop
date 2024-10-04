@@ -5,7 +5,7 @@
     "precio": 4000,
     "imagen": "https://i.ibb.co/CsM13Wr/desodorante-solido-16-11zon.webp",
     "categorias": ["cuidado-personal"],
-    "stock": 10,
+    "stock": 0,
     "descripcion": "Desodorante sólido natural, libre de aluminio y parabenos. Ideal para el cuidado diario sin comprometer tu salud ni el medio ambiente."
   },
   {
@@ -484,5 +484,44 @@
     "categorias": ["linea hogar"],
     "stock": 10,
     "descripcion": "Están elaborados con cera de soja y aromatizados con esencias. Se utilizan en hornitos de cerámica, reemplazando el sistema tradicional del agua y esencia líquida, dejando un riquísimo aroma. También se pueden colocar en cajoneras. Los bombones vienen presentados en caja de lata (ideal para regalo) o en bolsita de organza."
+  },
+  {
+    "id": "055",
+    "nombre": "Crema facial de Rosas",
+    "precio": 3000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1728072228/rosas_udnvwm.jpg",
+    "categorias": ["cremas"],
+    "stock": 10,
+    "descripcion": "La crema facial de rosas es ligera, hidratante y humectante, ideal para pieles normales a secas. No contiene sulfatos, no ha sido testada en animales, es libre de gluten y eco-friendly. Su fórmula está diseñada para proporcionar una hidratación profunda y duradera, manteniendo la piel suave y saludable sin causar irritaciones. Además, al ser una opción respetuosa con el medio ambiente y libre de crueldad, es perfecta para quienes buscan productos de belleza sostenibles y éticos."
+  },
+  {
+    "id": "056",
+    "nombre": "Esponja de Hilo",
+    "precio": 2000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1728073652/926d8c16-27d1-4f9a-8712-fd28f0157623_mlsbnq.jpg",
+    "categorias": ["cuidado-personal"],
+    "stock": 10,
+    "descripcion": "Una esponja de hilo de algodón, tejida a crochet, es ideal para exfoliar la piel debido a su textura suave pero efectiva. El algodón es un material natural que es suave al tacto, pero cuando se teje a crochet, crea una superficie ligeramente rugosa que ayuda a eliminar las células muertas de la piel sin causar irritación. Además, al ser de algodón, es una opción ecológica y sostenible, ya que es biodegradable y puede ser reutilizada muchas veces antes de necesitar ser reemplazada."
+  },
+  {
+    "id": "057",
+    "nombre": "Esponja Vegetal",
+    "precio": 3000,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1728073652/cec80425-8efc-4224-9f94-246bf0748776_cqubup.jpg",
+    "categorias": ["cuidado-personal"],
+    "stock": 10,
+    "descripcion": "La esponja vegetal es un producto natural y biodegradable, ideal para limpiar y exfoliar la piel. Se obtiene de plantas como la Luffa, lo que la hace suave, no abrasiva y ecológica. Es perfecta para limpiar la piel, eliminar células muertas, mejorar la circulación sanguínea y puede usarse con o sin jabón. Además, es una opción saludable y respetuosa con el medio ambiente, ya que es completamente biodegradable y no genera residuos dañinos."
+  },
+  {
+    "id": "058",
+    "nombre": "Set Desmaquillante ×4 Unidades",
+    "precio": 4500,
+    "imagen": "https://res.cloudinary.com/dpcpcnqmq/image/upload/v1728073652/a16bfe86-3116-4267-b20f-db50a3b17490_des8gh.jpg",
+    "categorias": ["skin care"],
+    "stock": 10,
+    "descripcion": "El set desmaquillante de 4 unidades es práctico, cómodo y lavable, confeccionado con telas variadas de lienzo y toalla en un tamaño ideal. Este set es perfecto para eliminar el maquillaje de manera efectiva y suave, sin necesidad de productos químicos adicionales. Además, al ser lavable y reutilizable, es una opción ecológica y económica, permitiendo su uso repetido sin perder eficacia."
   }
+
+  
 ]
+

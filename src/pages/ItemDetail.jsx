@@ -145,7 +145,7 @@ export default function ItemDetail() {
                   <Text as={'span'} fontWeight={'bold'}>
                     Stock disponible:
                   </Text>{' '}
-                  {product.stock}
+                  {product.stock> 0 ? 'Sí' : 'Sin stock'}
                 </ListItem>
               </List>
             </Box>

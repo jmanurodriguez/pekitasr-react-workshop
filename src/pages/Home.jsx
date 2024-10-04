@@ -109,7 +109,7 @@ export const Home = () => {
               el medio ambiente y las futuras generaciones. Cada producto en
               Pekitas es cuidadosamente elegido para asegurar que sea orgánico,
               libre de químicos dañinos y respetuoso con el entorno.
-              {/* ... resto del texto ... */}
+              
             </Text>
           </Box>
         </Flex>

@@ -80,12 +80,12 @@ const ContactInfo = () => {
             </Button>
             <Button
               as="a"
-              href="mailto:profgabyrodriguez331@gmail.com"
+              href="mailto:contacto@pekitas-ecotienda.com"
               colorScheme="pink"
               leftIcon={<FaEnvelope />}
               w={'full'}
             >
-              Email: profgabyrodriguez331@gmail.com
+              Email: contacto@pekitas-ecotienda.com
             </Button>
             <Button
               as="a"

@@ -24,18 +24,21 @@ const settings = {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
   ],
@@ -44,10 +47,10 @@ const settings = {
 export const ProductCarousel = ({ products }) => {
   const [slider, setSlider] = React.useState(null);
   const top = useBreakpointValue({ base: '90%', md: '70%' });
-  const side = useBreakpointValue({ base: '30%', md: '40px' });
+  const side = useBreakpointValue({ base: '10px', md: '40px' }); // Margen ajustado
 
   return (
-    <Box position={'relative'} height={'600px'} width={'full'} overflow={'hidden'}>
+    <Box position={'relative'} height={'600px'} width={'full'} overflow={'hidden'} p={4}> {/* Añadido padding */}
       <link
         rel="stylesheet"
         type="text/css"
@@ -59,12 +62,14 @@ export const ProductCarousel = ({ products }) => {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
 
+
       <IconButton
         aria-label="left-arrow"
         variant="ghost"
         position="absolute"
         left={side}
         top={top}
+        color = "pink.200"
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
@@ -72,11 +77,13 @@ export const ProductCarousel = ({ products }) => {
         <BiLeftArrowAlt size="40px" />
       </IconButton>
 
+      
       <IconButton
         aria-label="right-arrow"
         variant="ghost"
         position="absolute"
         right={side}
+        color = "pink.200"
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
@@ -85,9 +92,10 @@ export const ProductCarousel = ({ products }) => {
         <BiRightArrowAlt size="40px" />
       </IconButton>
 
+      {/* Carrusel */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {products.map((product) => (
-          <Box key={product.id} height={'auto'} position="relative">
+          <Box key={product.id} height={'auto'} position="relative" px={4}> 
             <Container size="container.lg" height="auto" position="relative">
               <Stack spacing={6} w={'full'} maxW={'lg'} position="relative">
                 <Item producto={product} />

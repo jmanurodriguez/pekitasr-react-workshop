@@ -87,7 +87,7 @@ export default function Footer() {
             <SocialButton label={'Instagram'} href={'https://www.instagram.com/pekitasecotienda/'}>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Email'} href={'mailto:contacto@pekitasecotienda.com'}>
+            <SocialButton label={'Email'} href={'mailto:contacto@pekitas-ecotienda.com'}>
               <FaEnvelope />
             </SocialButton>
           </Stack>

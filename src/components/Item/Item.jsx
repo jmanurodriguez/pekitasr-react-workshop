@@ -76,7 +76,7 @@ export function Item({ producto }) {
           )}
 
           <Text fontSize="sm" color={useColorModeValue("gray.500", "gray.400")}>
-            Stock disponible: {producto.stock}
+            Stock disponible: {producto.stock > 0 ? 'En Stock' : 'Sin stock'}
           </Text>
 
           <Text fontWeight="bold" fontSize="xl" color="pink.500">
@@ -93,8 +93,9 @@ export function Item({ producto }) {
             colorScheme="pink"
             textTransform="uppercase"
             _hover={{ bg: "pink.600" }}
+            isDisabled={producto.stock <= 0}  // 
           >
-            Ver Detalle
+            {producto.stock > 0 ? 'Ver Detalle' : 'Sin Stock'}
           </Button>
         </Link>
       </Box>
