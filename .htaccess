@@ -1,0 +1,16 @@
+# Asegura que los archivos JS sean servidos correctamente
+AddType application/javascript .js
+
+# Configuración para el manejo de rutas en una Single Page Application (SPA) como React
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /index.html [L,QSA]
+</IfModule>
+
+# Forzar HTTPS (opcional, pero recomendado)
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

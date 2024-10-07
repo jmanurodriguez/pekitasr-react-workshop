@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import { CartProvider } from './context/CartContext';
 import { AuthProvider } from './context/AuthContext';
 import { PromoModal } from './components/PromoModal/PromoModal'; 
+
 import { MainRoutes } from './routes/MainRoutes'; 
 import { createProductsFirestore } from './services/products.service';
 import productosData from './data/productos.json';  

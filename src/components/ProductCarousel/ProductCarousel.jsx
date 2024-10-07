@@ -11,7 +11,7 @@ import Slider from 'react-slick';
 import { Item } from '../Item/Item';
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   infinite: true,
   autoplay: true,
