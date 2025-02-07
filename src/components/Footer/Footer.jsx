@@ -9,7 +9,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { FaInstagram, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 const SocialButton = ({ children, label, href }) => (
   <chakra.button
@@ -34,13 +34,13 @@ const SocialButton = ({ children, label, href }) => (
 
 export default function Footer() {
   return (
-    <Box bg={'pink.500'} color={'white'}>
+    <Box bg={'pink.400'} color={'white'}>
       <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
         <figure>
           <Link to="/">
             <Image
-              src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
-              alt="Logo de Pekitas Ecotienda"
+              src="https://placehold.co/100x100/pink/white/png?text=Demo+Logo"
+              alt="Logo Demo"
               boxSize="100px"
               border="1px solid white"
               borderRadius="full"
@@ -58,7 +58,7 @@ export default function Footer() {
             Sobre Nosotros
           </Link>
           <Link to="/#productos" style={{ color: 'white' }}>
-            Nuestros Productos
+            Productos
           </Link>
           <Link to="/contact" style={{ color: 'white' }}>
             Contacto
@@ -66,11 +66,7 @@ export default function Footer() {
         </Stack>
       </Container>
 
-      <Box
-        borderTopWidth={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('pink.600', 'pink.700')}
-      >
+      <Box borderTopWidth={1} borderStyle={'solid'} borderColor={useColorModeValue('pink.600', 'pink.700')}>
         <Container
           as={Stack}
           maxW={'6xl'}
@@ -79,15 +75,15 @@ export default function Footer() {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Text>© 2023 Pekitas Ecotienda. Todos los derechos reservados</Text>
+          <Text>© 2024 Demo Store. Todos los derechos reservados</Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'WhatsApp'} href={'https://wa.me/+541165726162?text=Hola,%20quiero%20saber%20más%20sobre%20Pekitas%20Ecotienda'}>
+            <SocialButton label={'WhatsApp'} href={'https://wa.me/1234567890?text=Hola,%20me%20interesa%20saber%20más'}>
               <FaWhatsapp />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'https://www.instagram.com/pekitasecotienda/'}>
+            <SocialButton label={'Instagram'} href={'#'}>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'Email'} href={'mailto:contacto@pekitas-ecotienda.com'}>
+            <SocialButton label={'Email'} href={'mailto:demo@example.com'}>
               <FaEnvelope />
             </SocialButton>
           </Stack>

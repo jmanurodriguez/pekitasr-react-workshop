@@ -14,8 +14,8 @@ export const Checkout = () => {
   const [totalDiscount, setTotalDiscount] = useState(0);
 
   const validPromoCodes = {
-    "pekitas0410": 10,
-    "webpekitas": 20,
+    "DEMO10": 10,
+    "DEMO20": 20,
   };
 
 
@@ -89,12 +89,12 @@ export const Checkout = () => {
   const totalWithDiscount = total - (total * (totalDiscount / 100)); 
 
   const generarMensajeWhatsApp = () => {
-    let mensaje = "Gracias por visitar Pekitas Ecotienda.\nEn breve atenderemos tu solicitud!!!\n\nDetalles de mi compra:\n\n";
+    let mensaje = "Demo Store - Nueva Orden.\n\nDetalles de mi compra:\n\n";
     cartState.forEach((item) => {
       mensaje += `${item.nombre} (x${item.qty}): $${(item.price * item.qty).toFixed(2)}\n`;
     });
     mensaje += `\nTotal: $${totalWithDiscount.toFixed(2)}`;
-    return encodeURIComponent(mensaje); 
+    return encodeURIComponent(mensaje);
   };
 
   const handleCheckout = async () => {
@@ -130,7 +130,7 @@ export const Checkout = () => {
       }, { merge: true });
 
       
-      const numeroWhatsApp = "5491165726162"; 
+      const numeroWhatsApp = "1234567890"; // Número de demostración
       const mensaje = generarMensajeWhatsApp();
       const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
       window.open(url, "_blank");
@@ -140,7 +140,7 @@ export const Checkout = () => {
       setTotalDiscount(0);
 
     } catch (error) {
-      console.error("Error al registrar los códigos promocionales:", error);
+      console.error("Error al completar la compra:", error);
       toast({
         title: "Error al completar la compra.",
         description: error.message,

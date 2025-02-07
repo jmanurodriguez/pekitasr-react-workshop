@@ -75,7 +75,7 @@ import {
                   <Image
                     borderRadius="full"
                     border="2px solid white"
-                    src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
+                    src="https://placehold.co/400x400/B6E3E9/white/png?text=Jabonera"
                     alt="Pekitas Ecotienda"
                     objectFit="contain"
                     boxShadow="lg"
@@ -116,7 +116,7 @@ import {
                 color={useColorModeValue('gray.700', 'gray.200')}
                 fontSize="lg"
               >
-                Pekitas Ecotienda es más que una simple tienda, es una visión y un compromiso con el futuro de nuestro planeta. Fundada por la emprendedora y especialista en artes visuales, Gabriela Rodríguez, Pekitas Ecotienda es el resultado de una pasión por la belleza natural y un profundo respeto por el medio ambiente. Gabriela, con su amplio conocimiento y experiencia en las artes visuales, ha creado una gama de productos que no solo son estéticamente agradables, sino también amigables con el medio ambiente. Cada producto en Pekitas Ecotienda es natural, sostenible y biodegradable y veganos, lo que significa que no solo es bueno para ti, sino también para nuestro planeta.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               </Text>
               <BlogAuthor name="Pekitas Team" date={new Date()} />
             </Box>
@@ -146,7 +146,7 @@ import {
               <Box borderRadius="lg" overflow="hidden" boxShadow="lg">
                 <Image
                   transform="scale(1.0)"
-                  src="https://i.ibb.co/SvzmqmF/sales-31-11zon.webp"
+                  src="https://placehold.co/400x400/B6E3E9/white/png?text=Jabonera "
                   alt="Compromiso con el planeta"
                   objectFit="cover"
                   width="100%"
@@ -164,7 +164,7 @@ import {
                 </Text>
               </Heading>
               <Text as="p" fontSize="lg" marginTop="2" color="gray.700">
-                Nuestro compromiso es reducir la huella ambiental ofreciendo productos que respetan la naturaleza. Desde empaques biodegradables hasta cosméticos naturales, buscamos el equilibrio entre calidad y responsabilidad.En Pekitas Ecotienda, creemos que cada pequeña elección que hacemos puede tener un gran impacto en el mundo que nos rodea. Por eso, nos esforzamos por ofrecer productos que te ayuden a vivir de una manera más sostenible y consciente. Desde cosméticos hasta productos de cuidado personal, cada artículo en nuestra tienda ha sido cuidadosamente seleccionado y creado con el objetivo de reducir nuestro impacto en el medio ambiente
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               </Text>
               <BlogAuthor name="Pekitas Team" date={new Date()} />
             </Box>

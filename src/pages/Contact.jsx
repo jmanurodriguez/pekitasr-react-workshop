@@ -31,7 +31,7 @@ import { Banner } from "../components/Banner";
 import { RiContactsLine } from "react-icons/ri";
 import { GrContact } from "react-icons/gr";
 
-
+// cambie el bg del panel del logo en las redes para navidad, el anterior era pink.500
 
 const ContactInfo = () => {
   return (
@@ -44,10 +44,10 @@ const ContactInfo = () => {
         rounded={'md'}
         overflow={'hidden'}
       >
-        <Box h={'200px'} w={'full'} bg="pink.500" position="relative">
+        <Box h={'200px'} w={'full'} bg="#ff161e" position="relative">
           <Image
-            src={'https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp'}
-            alt="Logo Pekitas Ecotienda"
+            src={'https://placehold.co/400x400/B6E3E9/white/png?text=Jabonera'}
+            alt="Logo tienda"
             borderRadius="full"
             boxSize="150px"
             border="2px solid white"
@@ -71,28 +71,30 @@ const ContactInfo = () => {
           <Stack direction={'column'} spacing={4} align={'center'}>
             <Button
               as="a"
-              href="https://wa.me/5491165726162"
+              href="https://wa.me/5491111111111"
               colorScheme="whatsapp"
               leftIcon={<FaWhatsapp />}
               w={'full'}
             >
-              WhatsApp: +54 9 11 6572 6162
+              WhatsApp: +54 9 11 1111 1111
             </Button>
             <Button
               as="a"
-              href="mailto:contacto@pekitas-ecotienda.com"
+              href="mailto:contacto@contacto.com"
               colorScheme="pink"
               leftIcon={<FaEnvelope />}
               w={'full'}
             >
-              Email: contacto@pekitas-ecotienda.com
+              Email: contacto@contacto.com
             </Button>
             <Button
               as="a"
-              href="https://www.instagram.com/pekitasecotienda/"
+              href="https://www.instagram.com/1234567890"
               colorScheme="pink"
               leftIcon={<FaInstagram />}
+
               w={'full'}
+
             >
               Instagram
             </Button>
@@ -241,10 +243,10 @@ export const Contact = () => {
                   onChange={handleInputChange}
                 />
               </FormControl>
-
+   
               <Button
                 colorScheme="pink"
-                bgGradient='linear(to-br, pink.400, pink.900)'
+                bgGradient='linear(to-br, pink.400, #ff161e)' //cambie el gradiente el anterior era pink.900
                 size="lg"
                 width="full"
                 mt={4}

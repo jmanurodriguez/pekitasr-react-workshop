@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Box, SimpleGrid, Button, HStack, Spinner, Text } from "@chakra-ui/react";
+import {
+  Box,
+  SimpleGrid,
+  Button,
+  Wrap,
+  WrapItem,
+  Spinner,
+  Text,
+} from "@chakra-ui/react";
 import { Item } from "../Item/Item";
 
 export const ItemListContainer = ({ productos }) => {
@@ -26,38 +34,43 @@ export const ItemListContainer = ({ productos }) => {
 
   return (
     <Box maxW="1200px" mx="auto" py={10} px={4}>
-      <SimpleGrid
-        columns={{ base: 1, sm: 2, md: 3, lg: 4 }} 
-        spacing={6}
-      >
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing={6}>
         {productosPaginados.map((producto) => (
           <Item key={producto.id} producto={producto} />
         ))}
       </SimpleGrid>
 
-      <HStack mt={4} justify="center">
-        <Button
-          onClick={() => cambiarPagina(paginaActual - 1)}
-          isDisabled={paginaActual === 1}
-        >
-          «
-        </Button>
-        {Array.from({ length: totalPaginas }).map((_, i) => (
+      <Wrap mt={8} justify="center" spacing={2}>
+        <WrapItem>
           <Button
-            key={i + 1}
-            onClick={() => cambiarPagina(i + 1)}
-            colorScheme={i + 1 === paginaActual ? "pink" : "gray"}
+            size={{ base: "sm", md: "md" }}
+            onClick={() => cambiarPagina(paginaActual - 1)}
+            isDisabled={paginaActual === 1}
           >
-            {i + 1}
+            «
           </Button>
+        </WrapItem>
+        {Array.from({ length: totalPaginas }).map((_, i) => (
+          <WrapItem key={i + 1}>
+            <Button
+              size={{ base: "sm", md: "md" }}
+              onClick={() => cambiarPagina(i + 1)}
+              colorScheme={i + 1 === paginaActual ? "pink" : "gray"}
+            >
+              {i + 1}
+            </Button>
+          </WrapItem>
         ))}
-        <Button
-          onClick={() => cambiarPagina(paginaActual + 1)}
-          isDisabled={paginaActual === totalPaginas}
-        >
-          »
-        </Button>
-      </HStack>
+        <WrapItem>
+          <Button
+            size={{ base: "sm", md: "md" }}
+            onClick={() => cambiarPagina(paginaActual + 1)}
+            isDisabled={paginaActual === totalPaginas}
+          >
+            »
+          </Button>
+        </WrapItem>
+      </Wrap>
     </Box>
   );
 };

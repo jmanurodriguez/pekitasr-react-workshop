@@ -22,7 +22,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { ChevronDownIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 import { useCategory } from "../../hooks/useCategory";
 import { useAuth } from "../../context/AuthContext";
@@ -32,6 +32,7 @@ export const Navbar = () => {
   const { categories } = useCategory();
   const navigate = useNavigate();
   const { currentUser, logout } = useAuth();
+  const location = useLocation();
 
   const isMobile = useBreakpointValue({ base: true, md: false });
   const logoBoxSize = useBreakpointValue({ base: "50px", sm: "60px", md: "70px" });
@@ -44,18 +45,34 @@ export const Navbar = () => {
     navigate(`/category/${category}`);
   };
 
-  const NavItem = ({ to, children, onClick }) => (
-    <RouterLink to={to} onClick={onClick}>
-      <Text
-        color="white"
-        fontWeight="bold"
-        fontSize={{ base: "md", md: "lg" }}
-        mb={{ base: 4, md: 0 }}
-      >
-        {children}
-      </Text>
-    </RouterLink>
-  );
+  const NavItem = ({ to, children, onClick }) => {
+    const isActive = location.pathname === to;
+    
+    return (
+      <RouterLink to={to} onClick={onClick}>
+        <Text
+          color="white"
+          fontWeight="bold"
+          position="relative"
+          _after={{
+            content: '""',
+            position: 'absolute',
+            bottom: '-2px',
+            left: 0,
+            width: isActive ? '100%' : '0%',
+            height: '2px',
+            bg: 'white',
+            transition: 'width 0.3s ease'
+          }}
+          _hover={{
+            _after: { width: '100%' }
+          }}
+        >
+          {children}
+        </Text>
+      </RouterLink>
+    );
+  };
 
   const NavItems = () => (
     <>
@@ -71,7 +88,7 @@ export const Navbar = () => {
           fontWeight="bold"
           fontSize={{ base: "md", md: "lg" }}
           rightIcon={<ChevronDownIcon />}
-          _hover={{ bg: 'pink.600' }}
+          _hover={{ bg: 'pink' }}
         >
           Productos
         </MenuButton>
@@ -95,14 +112,19 @@ export const Navbar = () => {
       <NavItem to="/upcoming-products" onClick={onClose}>
         Próximos Productos
       </NavItem>
+      <NavItem to="/how-to-buy" onClick={onClose}>
+        Como Comprar
+      </NavItem>
       <NavItem to="/contact" onClick={onClose}>
         Contacto
       </NavItem>
     </>
   );
 
+
+
   return (
-    <Box bg="pink.500" boxShadow="md" mb={0} width="100%">
+    <Box bg="pink.400" boxShadow="md" mb={0} width="100%">
       <Flex
         color="white"
         minH="70px"
@@ -132,13 +154,13 @@ export const Navbar = () => {
         <Flex justify="center" flex={{ base: 1, md: 1 }} px={2}>
           <RouterLink to="/">
             <Image
-              src="https://i.ibb.co/d4QdwVQ/pekitas-logo-1.webp"
-              alt="Pekitas Logo"
+              src="https://placehold.co/100x100/pink/white/png?text=Demo+Logo"
+              alt="Demo Store Logo"
               boxSize={logoBoxSize}
               border="1px solid white"
               borderRadius="full"
               objectFit="contain"
-              filter="brightness(20)"
+              filter="brightness(0) invert(1)"
               _hover={{ transform: "scale(1.05)", transition: "0.3s" }}
             />
           </RouterLink>
@@ -151,13 +173,13 @@ export const Navbar = () => {
             </Text>
           )}
           {currentUser ? (
-            <Button colorScheme="pink" onClick={logout} size={buttonSize} mr={2}>
+            <Button colorScheme="red" onClick={logout} size={buttonSize} mr={2}>
               Cerrar Sesión
-            </Button>
+            </Button> //* reemplaze los botones de rojo a verde
           ) : (
             <HStack spacing={2} mr={2}>
               <RouterLink to="/register">
-                <Button colorScheme="pink" size={buttonSize}>
+                <Button colorScheme="" size={buttonSize}>
                   Registrarse
                 </Button>
               </RouterLink>

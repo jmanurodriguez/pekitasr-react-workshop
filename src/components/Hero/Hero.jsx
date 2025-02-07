@@ -52,18 +52,17 @@ export const Hero = () => {
                 zIndex: -1,
               }}
             >
-              ¡Explora Pekitas Ecotienda!
+              ¡Explora Demo Store!
             </Text>
             <br />
             <Text as={"span"} color={"pink.400"}>
-              Productos eco-amigables para todos
+              Productos para todos
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Pekitas Ecotienda es tu destino para productos sostenibles y
-            amigables con el medio ambiente. Desde cosméticos naturales hasta
-            productos biodegradables, encuentra todo lo que necesitas para
-            cuidar de ti y del planeta.
+            Demo Store es tu destino para productos de calidad.
+            Encuentra todo lo que necesitas en un solo lugar.
+            ¡Explora nuestra selección de productos!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -101,15 +100,6 @@ export const Hero = () => {
           position={"relative"}
           w={"full"}
         >
-          <Blob
-            w={"150%"}
-            h={"150%"}
-            position={"absolute"}
-            top={"-20%"}
-            left={0}
-            zIndex={-1}
-            color={useColorModeValue("pink.50", "pink.400")}
-          />
           <Box
             position={"relative"}
             height={{ base: "250px", sm: "300px", md: "400px" }}
@@ -124,7 +114,7 @@ export const Hero = () => {
               align={"center"}
               w={"100%"}
               h={"100%"}
-              src={"https://i.ibb.co/SvzmqmF/sales-31-11zon.webp"}
+              src={"https://placehold.co/800x600/pink/white/png?text=Demo+Store+Hero"}
             />
           </Box>
         </Flex>

@@ -35,13 +35,14 @@ export const CartDetails = () => {
       showCancelButton: true,
       confirmButtonColor: '#d33',
       cancelButtonColor: '#3085d6',
-      confirmButtonText: 'Sí, eliminarlo'
+      confirmButtonText: 'Sí, eliminarlo',
+      cancelButtonText: 'Cancelar'
     }).then((result) => {
       if (result.isConfirmed) {
         deleteItem(item);
         Swal.fire(
           'Eliminado',
-          `${item.nombre} ha sido eliminado del carrito.`,
+          'El producto ha sido eliminado del carrito.',
           'success'
         );
       }
@@ -90,7 +91,7 @@ export const CartDetails = () => {
               textAlign={{ base: "center", md: "left" }}
             >
               <Image
-                src={item.imagen}
+                src={item.imagen || "https://placehold.co/200x200/9ED5C5/white/png?text=Product"}
                 alt={item.nombre}
                 boxSize={{ base: "150px", md: "100px" }}
                 objectFit="cover"

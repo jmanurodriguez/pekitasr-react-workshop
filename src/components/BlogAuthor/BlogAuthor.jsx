@@ -6,7 +6,7 @@ export const BlogAuthor = memo(({ name, date }) => (
     <Image
       borderRadius="full"
       boxSize="40px"
-      src="https://ejemplo.com/avatar.jpg"
+      src="https://placehold.co/100x100/gray/white/png?text=Avatar"
       alt={`Avatar de ${name}`}
     />
     <Text fontWeight="medium">{name}</Text>

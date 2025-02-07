@@ -37,7 +37,7 @@ export const PromoModal = () => {
                 border: "none",
                 borderRadius: "8px",
               }}
-              src="https://www.canva.com/design/DAGSoxJUfvU/FIEQzereMBlX2wO673G6ag/view?embed"
+              src="https://www.canva.com/design/DAGYKk2zmic/ItXRG1X78oLnDh1ixwPWUw/view?embed"
               allowFullScreen
             ></iframe>
           </div>

@@ -2,13 +2,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDYfQSI9Mx2Ir_s3hx6KeUwCgY9HSK57bM",
-  authDomain: "proyecto-pekitas-ecotienda.firebaseapp.com",
-  projectId: "proyecto-pekitas-ecotienda",
-  storageBucket: "proyecto-pekitas-ecotienda.appspot.com",
-  messagingSenderId: "500546853920",
-  appId: "1:500546853920:web:043269018bbfba59017045",
-  measurementId: "G-JPELE23H4N"
+  apiKey: "xxxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxxxxxxxxxxx",
+  projectId: "xxxxxxxxxxxxxxxxxxxxxxx",
+  storageBucket: "xxxxxxxxxxxxxxxxxxxxx",
+  messagingSenderId: "xxxxxxxxxxxxxxxxxx",
+  appId: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  measurementId: "xxxxxxxxxxxxxxxxxxxxxxxxx"
 };
 
 const app = initializeApp(firebaseConfig);
