@@ -22,3 +22,74 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Firebase
+.firebase/
+
+# Documentation temporal (ya commiteados los importantes)
+BREADCRUMB-NAVIGATION.md
+CAROUSEL-IMPROVEMENTS.md
+CART-HOOK-FIX.md
+FASE-1-COMPLETADA.md
+FASE-1-FINAL-STATUS.md
+FAST-REFRESH-FIX.md
+HOOKS-CORRECTION.md
+MEJORAS-COMPLETADAS-FINAL.md
+MIGRATION-REPORT.md
+PROBLEMS-RESOLVED.md
+PROYECTO-MODERNIZADO-COMPLETADO.md
+mejorasv2.txt
+
+# Docker files (keep in project but don't track changes for now)
+Dockerfile
+docker-compose.yml
+nginx.conf
+
+# Migration scripts (temporal)
+check-data.js
+migrate-products.js
+migrate-simple.js
+test-firestore.js
+
+# PWA files (will be regenerated in Next.js)
+public/manifest.json
+public/robots.txt
+public/sitemap.xml
+public/sw.js
+
+# New components/features (work in progress v2.0)
+src/components/Hero/ParallaxHero.jsx
+src/components/Image/
+src/components/ItemDetails/
+src/components/ProductCarousel/ProductCarouselEnhanced.jsx
+src/components/ProductCarousel/ProductCarouselImproved.jsx
+src/components/SEO/
+src/components/accessibility/
+src/components/features/
+src/components/forms/
+src/components/reviews/
+src/components/ui/
+src/constants/
+src/context/ReviewsContext.jsx
+src/context/WishlistContext.jsx
+src/hooks/useAuth.jsx
+src/hooks/useCart.jsx
+src/hooks/usePWA.jsx
+src/hooks/usePerformanceMonitor.jsx
+src/hooks/useProductsOptimized.jsx
+src/hooks/useReviews.jsx
+src/hooks/useUpdateNotification.jsx
+src/hooks/useWishlist.jsx
+src/pages/UserDashboard.jsx
+src/pages/Wishlist.jsx
+src/services/analytics.js
+src/services/productService.js
+src/utils/
+
+# ESLint config (new format, keep separate for now)
+eslint.config.js
