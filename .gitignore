@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Next.js
+.next/
+out/
+next-env.d.ts
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -62,6 +67,9 @@ public/robots.txt
 public/sitemap.xml
 public/sw.js
 
+# Old React pages (renamed to avoid Next.js conflict)
+src/pages-react-old/
+
 # New components/features (work in progress v2.0)
 src/components/Hero/ParallaxHero.jsx
 src/components/Image/
@@ -85,8 +93,6 @@ src/hooks/useProductsOptimized.jsx
 src/hooks/useReviews.jsx
 src/hooks/useUpdateNotification.jsx
 src/hooks/useWishlist.jsx
-src/pages/UserDashboard.jsx
-src/pages/Wishlist.jsx
 src/services/analytics.js
 src/services/productService.js
 src/utils/
